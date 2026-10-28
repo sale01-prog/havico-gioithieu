@@ -224,6 +224,16 @@
   gsap.from(".ab-badge", {scale: 0, rotate: -90, duration: 1.4, ease: "back.out(1.6)", scrollTrigger: {trigger: ".about-visual", start: "top 70%", once: true}});
   gsap.to(".ab-2", {yPercent: -12, ease: "none", scrollTrigger: {trigger: ".about-visual", start: "top bottom", end: "bottom top", scrub: true}});
 
+  // capability chapters drive the sticky image (sticky on phones too)
+  const stageImgs = $$(".cap-stage img"), no = $(".cap-no");
+  $$(".cap-item").forEach((it, i) => ScrollTrigger.create({trigger: it, start: "top 55%", end: "bottom 55%", onToggle: s => {
+    if (!s.isActive) return;
+    $$(".cap-item").forEach(x => x.classList.toggle("on", x === it));
+    stageImgs.forEach((im, j) => im.classList.toggle("on", j === i));
+    no.textContent = "0" + (i + 1);
+    $$("[data-count]", it).forEach(countUp);
+  }}));
+
   /* section-specific motion that differs by viewport */
   const mm = gsap.matchMedia();
   const tlItems = $$(".tl-item"), yearEl = $(".tl-year");
@@ -237,21 +247,10 @@
       onUpdate: s => { gsap.set(".tl-line i", {scaleX: s.progress}); const i = Math.min(tlItems.length - 1, Math.floor(s.progress * (tlItems.length + .4))); setYear(tlItems[i]); }}});
     tlItems.forEach(it => gsap.from(it.children, {autoAlpha: 0, y: 40, stagger: .08, duration: 1, ease: "expo.out", scrollTrigger: {trigger: it, containerAnimation: tween, start: "left 85%", once: true}}));
     gsap.from(".tl-photo img", {scale: 1.4, ease: "none", scrollTrigger: {trigger: ".tl-photo", containerAnimation: tween, start: "left right", end: "right right", scrub: true}});
-
-    // capability chapters drive the sticky image
-    const stageImgs = $$(".cap-stage img"), no = $(".cap-no");
-    $$(".cap-item").forEach((it, i) => ScrollTrigger.create({trigger: it, start: "top 55%", end: "bottom 55%", onToggle: s => {
-      if (!s.isActive) return;
-      $$(".cap-item").forEach(x => x.classList.toggle("on", x === it));
-      stageImgs.forEach((im, j) => im.classList.toggle("on", j === i));
-      no.textContent = "0" + (i + 1);
-      $$("[data-count]", it).forEach(countUp);
-    }}));
   });
   mm.add("(max-width: 820px)", () => {
     gsap.fromTo(".tl-line i", {scaleY: 0}, {scaleY: 1, ease: "none", scrollTrigger: {trigger: ".tl-track", start: "top 70%", end: "bottom 60%", scrub: true}});
     tlItems.forEach(it => ScrollTrigger.create({trigger: it, start: "top 65%", onEnter: () => setYear(it), onLeaveBack: () => setYear(tlItems[tlItems.indexOf(it) - 1])}));
-    $$(".cap-item [data-count]").forEach(el => ScrollTrigger.create({trigger: el, start: "top 90%", once: true, onEnter: () => countUp(el)}));
     // phones: each door swings open while it sits in the middle of the screen
     $$(".door").forEach(d => ScrollTrigger.create({trigger: d.querySelector(".door-frame"), start: "top 55%", end: "bottom 35%", onToggle: s => setDoor(d, s.isActive)}));
   });
