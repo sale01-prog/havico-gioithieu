@@ -68,7 +68,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .burger[aria-expanded="true"] i{background:#fff!important}
 .burger[aria-expanded="true"] i:first-child{top:21px;transform:rotate(45deg)}
 .burger[aria-expanded="true"] i:last-child{top:21px;transform:rotate(-45deg)}
-.mnav{position:fixed;inset:0;z-index:90;background:var(--blue);display:flex;flex-direction:column;justify-content:center;gap:4px;padding:0 24px;clip-path:circle(0 at calc(100% - 38px) 40px);transition:clip-path .8s var(--ease)}
+/* top padding clears the header logo; auto margins centre the list when it fits and let it scroll when it does not (large system font) */
+.mnav{position:fixed;inset:0;z-index:90;background:var(--blue);display:flex;flex-direction:column;gap:4px;padding:96px 24px 32px;overflow-y:auto;overscroll-behavior:contain;clip-path:circle(0 at calc(100% - 38px) 40px);transition:clip-path .8s var(--ease)}
+/* menu items scroll under the header, so give it the menu colour while open */
+body:has(.mnav.open) .head{background:var(--blue)!important;box-shadow:none!important}
+body:has(.mnav.open) .head .logo .lw{opacity:1}
+body:has(.mnav.open) .head .logo .lb{opacity:0}
+.mnav>:first-child{margin-top:auto}
+.mnav>:last-child{margin-bottom:auto}
 .mnav.open{clip-path:circle(150% at calc(100% - 38px) 40px)}
 .mnav a{color:#fff;font-size:clamp(30px,9vw,44px);font-weight:700;letter-spacing:-.02em;display:flex;align-items:baseline;gap:14px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.18)}
 .mnav small{font-size:12px;font-weight:500;opacity:.6}
