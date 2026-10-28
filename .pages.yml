@@ -78,6 +78,7 @@ content:
             fields:
               - { name: year, label: Năm, type: string }
               - { name: text, label: Sự kiện, type: string }
+              - { name: note, label: Ý nghĩa (dòng nhỏ bên dưới), type: text }
           - { name: photo, label: Ảnh cuối dải, type: image }
           - { name: photo_alt, label: Mô tả ảnh, type: string }
 
@@ -172,6 +173,7 @@ content:
               - { name: image, label: Ảnh, type: image }
               - { name: alt, label: Mô tả ảnh, type: string }
               - { name: text, label: Nội dung, type: text }
+              - { name: project, label: "Dự án liên kết (đường dẫn trang dự án, vd khach-san-ninh-binh)", type: string }
 
       - name: certs
         label: 06 — Chứng nhận & đối tác

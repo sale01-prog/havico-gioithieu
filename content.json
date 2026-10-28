@@ -39,12 +39,12 @@
   },
   "timeline": {
     "items": [
-      {"year": "1990", "text": "Bắt đầu từ xưởng gỗ truyền thống."},
-      {"year": "2003", "text": "Mở rộng quy mô sản xuất."},
-      {"year": "2014", "text": "Thành lập Công ty TNHH Xây dựng và Thương mại Quốc tế Á Đông."},
-      {"year": "2015", "text": "Thành lập văn phòng đại diện tại Đà Nẵng."},
-      {"year": "2023", "text": "Thành lập Công ty cổ phần Gỗ HAVICO."},
-      {"year": "2025", "text": "Thành lập văn phòng đại diện tại Hà Nội."}
+      {"year": "1990", "text": "Bắt đầu từ xưởng gỗ truyền thống.", "note": "Nền móng tay nghề mộc truyền thống: chọn gỗ, xử lý gỗ và gia công thủ công tỉ mỉ."},
+      {"year": "2003", "text": "Mở rộng quy mô sản xuất.", "note": "Đầu tư nhà xưởng và máy móc, đủ năng lực nhận đơn hàng nội thất số lượng lớn."},
+      {"year": "2014", "text": "Thành lập Công ty TNHH Xây dựng và Thương mại Quốc tế Á Đông.", "note": "Mở rộng sang thiết kế và thi công nội thất trọn gói cho căn hộ, biệt thự, khách sạn."},
+      {"year": "2015", "text": "Thành lập văn phòng đại diện tại Đà Nẵng.", "note": "Gần hơn với khách hàng và các dự án ở khu vực miền Trung."},
+      {"year": "2023", "text": "Thành lập Công ty cổ phần Gỗ HAVICO.", "note": "Tập trung sản xuất nội thất gỗ cho dự án và xuất khẩu, nhà máy 14.000 m² tại Hải Phòng."},
+      {"year": "2025", "text": "Thành lập văn phòng đại diện tại Hà Nội.", "note": "Phục vụ nhanh hơn chủ đầu tư và nhà thầu tại thị trường phía Bắc."}
     ],
     "photo": "/img/factory-front.webp",
     "photo_alt": "Cổng nhà máy HAVICO Furniture"
@@ -77,7 +77,7 @@
     "export_lead": "Từ nội thất hoàn thiện đến sản phẩm RTA, thiết kế và sản xuất theo tiêu chuẩn quốc tế, đáp ứng linh hoạt thị trường xuất khẩu.",
     "export_cards": [
       {"image": "/img/pc-sierra-set.webp", "alt": "Bộ sofa ngoài trời gỗ", "caption": "Đồ ngoài trời"},
-      {"image": "/img/pc-wishbone.webp", "alt": "Bộ bàn ghế ăn gỗ", "caption": "Bàn ghế ăn"},
+      {"image": "/img/pc-wishbone-oak.webp", "alt": "Ghế ăn Wishbone gỗ sồi", "caption": "Bàn ghế ăn"},
       {"image": "/img/pc-lenia-queen.webp", "alt": "Giường ngủ gỗ", "caption": "Giường ngủ"},
       {"image": "/img/pc-night.webp", "alt": "Tủ đầu giường", "caption": "Tủ đầu giường"},
       {"image": "/img/pc-tv.webp", "alt": "Kệ tivi", "caption": "Kệ tivi"},
@@ -96,8 +96,8 @@
       {"title": "Cửa thông phòng", "text": "Vận hành êm, cách âm tốt, chống cong vênh. Lõi Honeycomb hoặc Tubular PB/LVL; bề mặt melamine, laminate."},
       {"title": "Cửa nhà vệ sinh", "text": "Chống ẩm, hạn chế cong vênh, có thể tích hợp khe thông gió. Lõi WPC / PVC foam, phụ kiện inox SUS304."}
     ],
-    "kitchen_image": "/img/pr-sentosa-3.webp",
-    "kitchen_alt": "Tủ bếp gỗ, Minato Residence",
+    "kitchen_image": "/img/du-an/biet-thu-vinhomes-marina/12.webp",
+    "kitchen_alt": "Tủ bếp đảo, biệt thự Vinhomes Marina",
     "kitchen_title": "Tủ bếp & tủ lavabo",
     "kitchen_text": "Kết cấu năm lớp: khung chịu lực, lõi chống cong vênh, bề mặt chống trầy, nẹp cạnh chống ẩm, hoàn thiện PU/UV. Lựa chọn vật liệu MDF chống ẩm hoặc WPC chống nước tuyệt đối.",
     "materials": [
@@ -110,9 +110,9 @@
     "note": "Một số hình ảnh phối cảnh do Á Đông Décor — công ty thành viên — thực hiện.",
     "styles_title": "Phong cách thiết kế của chúng tôi",
     "styles": [
-      {"name": "Japandi", "image": "/img/sty-japandi.webp", "alt": "Phòng khách phong cách Japandi", "text": "Tôn vinh chất liệu tự nhiên, tông màu trung tính và tay nghề tinh tế, tạo nên không gian bình yên, thanh thoát và mang vẻ đẹp vượt thời gian."},
-      {"name": "Scandinavian", "image": "/img/sty-scandi.webp", "alt": "Phòng khách phong cách Scandinavian", "text": "Đề cao ánh sáng tự nhiên, công năng và sự tối giản, mang đến cảm giác nhẹ nhàng, ấm cúng và phù hợp với nhiều không gian sống hiện đại."},
-      {"name": "Contemporary", "image": "/img/sty-contemporary.webp", "alt": "Phòng ngủ phong cách Contemporary", "text": "Ngôn ngữ thiết kế hiện đại, tinh tế với tính ứng dụng cao; tối ưu công năng, độ bền và khả năng tuỳ biến cho các dự án thương mại quy mô lớn."}
+      {"name": "Hiện đại", "image": "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/02.webp", "alt": "Phòng khách căn hộ mẫu Sky Gemia, phong cách hiện đại", "text": "Đường nét gọn gàng, gỗ sáng màu và ánh sáng ấm; tối ưu công năng cho căn hộ và văn phòng, dễ sản xuất hàng loạt cho dự án.", "project": "can-ho-mau-du-an-chung-cu-sky-gemia"},
+      {"name": "Tân cổ điển", "image": "/img/du-an/biet-thu-vinhomes-marina/02.webp", "alt": "Phòng khách biệt thự Vinhomes Marina, phong cách tân cổ điển", "text": "Phào chỉ, ốp tường và đồ gỗ thủ công tinh xảo trên nền màu trung tính, mang vẻ sang trọng bền vững cho biệt thự.", "project": "biet-thu-vinhomes-marina"},
+      {"name": "Indochine", "image": "/img/du-an/khach-san-ninh-binh/04.webp", "alt": "Sảnh khách sạn Ninh Bình, phong cách Indochine", "text": "Gỗ tối màu, gạch bông và hoạ tiết Á Đông kết hợp kiến trúc Pháp, đưa văn hoá Việt vào từng không gian.", "project": "khach-san-ninh-binh"}
     ]
   },
   "certs": {

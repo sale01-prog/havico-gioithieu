@@ -109,6 +109,22 @@
   inspo.forEach(f => { f.addEventListener("mouseenter", () => pick(f)); f.addEventListener("click", () => pick(f)); });
   pick(inspo[0]);
 
+  /* ---------- project tiles: hovering cross-fades through the project's photos ---------- */
+  if (matchMedia("(hover:hover)").matches) $$(".pj[data-imgs]").forEach(pj => {
+    const box = $(".pj-imgs", pj), list = pj.dataset.imgs.trim().split(" "), alt = $("img", box).alt;
+    let i = 0, timer;
+    const next = () => {
+      i = (i + 1) % list.length;
+      const im = new Image(); im.src = list[i]; im.alt = alt; im.className = "pj-fade";
+      im.decode().catch(() => {}).then(() => {
+        box.append(im); requestAnimationFrame(() => requestAnimationFrame(() => im.classList.add("in")));
+        setTimeout(() => { while (box.children.length > 1) box.firstElementChild.remove(); }, 1000);
+      });
+    };
+    pj.addEventListener("mouseenter", () => { clearInterval(timer); timer = setInterval(next, 1500); });
+    pj.addEventListener("mouseleave", () => clearInterval(timer));
+  });
+
   addEventListener("keydown", e => { if (e.key === "Escape") menu(false); });
 
   /* ---------- header state (works without GSAP too) ---------- */
@@ -257,7 +273,7 @@
   /* projects: clip reveal + inner parallax */
   $$(".pj").forEach((pj, i) => {
     gsap.fromTo(pj, {clipPath: "inset(18% 18% 18% 18%)", autoAlpha: 0}, {clipPath: "inset(0% 0% 0% 0%)", autoAlpha: 1, duration: 1.5, ease: "expo.out", delay: (i % 3) * .08, scrollTrigger: {trigger: pj, start: "top 90%", once: true}});
-    gsap.fromTo($("img", pj), {yPercent: -8}, {yPercent: 8, ease: "none", scrollTrigger: {trigger: pj, start: "top bottom", end: "bottom top", scrub: true}});
+    gsap.fromTo($(".pj-imgs", pj), {yPercent: -8}, {yPercent: 8, ease: "none", scrollTrigger: {trigger: pj, start: "top bottom", end: "bottom top", scrub: true}});
   });
   gsap.from("#inspo figure", {autoAlpha: 0, y: 60, duration: 1.2, ease: "expo.out", stagger: .08, scrollTrigger: {trigger: "#inspo", start: "top 85%", once: true}});
 

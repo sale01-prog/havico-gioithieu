@@ -137,13 +137,15 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .tl-top .tag{color:#6FB1FF}
 .tl-year{font-size:clamp(90px,16vw,260px);font-weight:800;line-height:.8;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.35);font-variant-numeric:tabular-nums}
 .tl-track{position:relative;display:flex;gap:clamp(40px,6vw,96px);padding:0 var(--pad);width:max-content;align-items:flex-start;will-change:transform}
-.tl-line{position:absolute;left:var(--pad);right:var(--pad);top:9px;height:2px;background:rgba(255,255,255,.15)}
+/* the line links the dots only: it stops before the photo at the end of the track */
+.tl-line{position:absolute;left:var(--pad);right:calc(var(--pad) + clamp(320px,34vw,520px) + clamp(40px,6vw,96px));top:9px;height:2px;background:rgba(255,255,255,.15)}
 .tl-line i{display:block;height:100%;background:#6FB1FF;transform:scaleX(0);transform-origin:left}
 .tl-item{position:relative;width:clamp(230px,22vw,320px);padding-top:44px}
 .tl-dot{position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;border:2px solid #6FB1FF;background:var(--navy);transition:background .4s,transform .4s var(--ease)}
 .tl-item.on .tl-dot{background:#6FB1FF;transform:scale(1.25)}
 .tl-item h3{font-size:clamp(40px,4vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1}
 .tl-item p{margin-top:14px;color:rgba(255,255,255,.72);font-size:16px}
+.tl-item .tl-note{margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.55);font-size:14px;line-height:1.6}
 .tl-photo{width:clamp(320px,34vw,520px);aspect-ratio:16/10;overflow:hidden;border-radius:4px;margin-top:-20px}
 .tl-photo img{width:100%;height:100%;object-fit:cover}
 
@@ -225,6 +227,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .pj{position:relative;overflow:hidden;border-radius:4px;background:var(--mist)}
 .pj img{position:absolute;left:0;top:-10%;width:100%;height:120%;object-fit:cover;transition:transform 1.2s var(--ease)}
 .pj:hover img{transform:scale(1.05)}
+.pj-imgs{position:absolute;inset:0}
+.pj-imgs .pj-fade{opacity:0;transition:opacity .9s ease,transform 1.2s var(--ease)}
+.pj-imgs .pj-fade.in{opacity:1}
 .pj span{position:absolute;left:16px;bottom:14px;z-index:1;color:#fff;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;background:rgba(7,82,157,.85);border-radius:999px;transform:translateY(8px);opacity:0;transition:.5s var(--ease)}
 .pj:hover span{transform:none;opacity:1}
 .pj span em{font-style:normal;opacity:.8}
@@ -250,7 +255,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .inspo-row figcaption small{font-size:12px;font-weight:600;letter-spacing:.16em;color:#9CC8F5}
 .inspo-row figcaption b{font-size:clamp(20px,1.8vw,28px);font-weight:700;letter-spacing:-.01em;white-space:nowrap}
 .inspo-row figcaption span{font-size:15px;line-height:1.55;max-width:440px;opacity:0;max-height:0;overflow:hidden;transform:translateY(10px);transition:opacity .5s,transform .6s var(--ease),max-height .6s var(--ease)}
-.inspo-row figure.on figcaption span{opacity:.92;max-height:120px;transform:none;transition-delay:.25s}
+.sty-go{display:inline-flex;gap:8px;margin-top:12px;padding:8px 16px;border-radius:999px;background:#fff;color:var(--blue);font-size:14px;font-weight:600;opacity:1}
+.sty-go i{font-style:normal;transition:transform .3s}
+.sty-go:hover i{transform:translateX(4px)}
+.inspo-row figure.on figcaption span{opacity:.92;max-height:190px;transform:none;transition-delay:.25s}
 
 /* certs */
 .certs{background:var(--ice);padding-bottom:0}
@@ -334,10 +342,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .tl-in{min-height:0;padding:96px 0}
   .tl-top{margin-bottom:40px}
   .tl-track{flex-direction:column;width:auto;gap:36px}
-  .tl-line{left:calc(var(--pad) + 9px);right:auto;top:0;bottom:0;width:2px;height:auto}
+  .tl-line{left:calc(var(--pad) + 9px);right:auto;top:0;bottom:calc((100vw - 2 * var(--pad)) * .625 + 36px);width:2px;height:auto}
   .tl-line i{transform:scaleY(0);transform-origin:top;width:100%;height:100%}
   .tl-item{width:auto;padding:0 0 0 44px}
-  .tl-photo{width:100%;margin:0}
+  .tl-photo{width:100%;margin:0;position:relative;z-index:1}
   .cap-stage{top:68px;z-index:2;height:56vw}  /* stays pinned so each chapter swaps the photo */
   .cap-item{min-height:0;padding:40px 0;opacity:1}
   .cap-stats{grid-template-columns:1fr 1fr 1fr}

@@ -7,9 +7,9 @@ from markupsafe import Markup, escape
 O = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # door photos and 3D offsets, in the order of products.doors
 DOORS = [
-    {"style": "--ar:255/640;--l:7.8%;--t:4.5%;--r:7.5%", "room": "pr-vlasta-2.webp", "leaf": "door-fire-leaf.webp", "frame": "door-fire-frame.webp"},
-    {"style": "--ar:191/535;--l:9.8%;--t:3.5%;--r:10%", "room": "col-bed-2.webp", "leaf": "door-room-leaf.webp", "frame": "door-room-frame.webp"},
-    {"style": "--ar:279/624;--l:8%;--t:4.2%;--r:8.8%", "room": "behind-bath.webp", "leaf": "door-wc-leaf.webp", "frame": "door-wc-frame.webp"},
+    {"style": "--ar:255/640;--l:7.8%;--t:4.5%;--r:7.5%", "room": "door-room-fire.webp", "leaf": "door-fire-leaf-hd.webp", "frame": "door-fire-frame-hd.webp"},
+    {"style": "--ar:191/535;--l:9.8%;--t:3.5%;--r:10%", "room": "door-room-room.webp", "leaf": "door-room-leaf-hd.webp", "frame": "door-room-frame-hd.webp"},
+    {"style": "--ar:279/624;--l:8%;--t:4.2%;--r:8.8%", "room": "door-room-wc.webp", "leaf": "door-wc-leaf-hd.webp", "frame": "door-wc-frame-hd.webp"},
 ]
 
 env = Environment(loader=FileSystemLoader(os.path.join(O, "_build")), autoescape=True, keep_trailing_newline=True,
@@ -33,7 +33,7 @@ for p in P:
     p["slug"] = slugify(p.get("slug") or p["name"])
 
 C = json.load(open(os.path.join(O, "content.json"), encoding="utf-8"))
-html = env.get_template("index.html.j2").render(**C, project_count=len(P), featured=[p for p in P if p.get("featured")][:5])
+html = env.get_template("index.html.j2").render(**C, project_count=len(P), project_names={p["slug"]: p["name"] for p in P}, featured=[p for p in P if p.get("featured")][:5])
 write("index.html", html)
 print("index.html", len(html), "bytes")
 
