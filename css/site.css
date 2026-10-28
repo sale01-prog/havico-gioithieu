@@ -229,11 +229,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .pj:hover span{transform:none;opacity:1}
 .pj-a{grid-column:1/8;grid-row:span 3}
 .pj-b{grid-column:8/13;grid-row:span 2}
-.pj-c{grid-column:8/13;grid-row:span 2}
+.pj-c{grid-column:8/13;grid-row:span 3}
 .pj-d{grid-column:1/5;grid-row:span 2}
 .pj-e{grid-column:5/8;grid-row:span 2}
-.pj-f{grid-column:8/13;grid-row:span 1}
-.pj-f{grid-row:span 1}
 .pj-note{margin-top:18px;font-size:13px;color:var(--muted)}
 .inspo{margin-top:90px}
 .inspo .eyebrow{color:var(--blue);margin-bottom:22px}
