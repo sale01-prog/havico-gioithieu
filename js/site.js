@@ -109,17 +109,7 @@
   inspo.forEach(f => { f.addEventListener("mouseenter", () => pick(f)); f.addEventListener("click", () => pick(f)); });
   pick(inspo[0]);
 
-  /* ---------- lightbox ---------- */
-  const lb = $("#lb"); let lbFrom;
-  $$(".pj").forEach(a => a.addEventListener("click", e => {
-    e.preventDefault(); lbFrom = a;
-    $("img", lb).src = a.getAttribute("href"); $("img", lb).alt = $("img", a).alt; $("p", lb).textContent = a.dataset.cap;
-    lb.hidden = false; lenis?.stop(); $(".lb-close", lb).focus();
-    if (motion) gsap.fromTo($("img", lb), {scale: .92, autoAlpha: 0}, {scale: 1, autoAlpha: 1, duration: .7, ease: "expo.out"});
-  }));
-  const closeLb = () => { if (lb.hidden) return; lb.hidden = true; lenis?.start(); lbFrom?.focus(); };
-  lb.addEventListener("click", e => { if (e.target === lb || e.target.closest(".lb-close")) closeLb(); });
-  addEventListener("keydown", e => { if (e.key === "Escape") { closeLb(); menu(false); } });
+  addEventListener("keydown", e => { if (e.key === "Escape") menu(false); });
 
   /* ---------- header state (works without GSAP too) ---------- */
   const head = $(".head"), hero = $(".hero");

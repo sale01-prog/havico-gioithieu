@@ -161,13 +161,6 @@ content:
         type: object
         fields:
           - { name: title, label: Tiêu đề, type: string }
-          - name: items
-            label: Dự án (giữ 5 dự án để lưới ảnh đẹp)
-            type: object
-            list: true
-            fields:
-              - { name: name, label: Tên dự án, type: string }
-              - { name: image, label: Ảnh, type: image }
           - { name: note, label: Ghi chú dưới ảnh, type: string }
           - { name: styles_title, label: Phong cách — tiêu đề, type: string }
           - name: styles
@@ -241,4 +234,5 @@ content:
           - { name: year, label: Năm, type: string }
           - { name: unit, label: Đơn vị thực hiện, type: string }
           - { name: tagline, label: Mô tả thêm, type: text }
+          - { name: featured, label: Hiện ở trang chủ (chọn 5 dự án), type: boolean }
           - { name: images, label: Ảnh (ảnh đầu là ảnh bìa), type: image, list: true }

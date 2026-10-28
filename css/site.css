@@ -227,6 +227,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .pj:hover img{transform:scale(1.05)}
 .pj span{position:absolute;left:16px;bottom:14px;z-index:1;color:#fff;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;background:rgba(7,82,157,.85);border-radius:999px;transform:translateY(8px);opacity:0;transition:.5s var(--ease)}
 .pj:hover span{transform:none;opacity:1}
+.pj span em{font-style:normal;opacity:.8}
 .pj-a{grid-column:1/8;grid-row:span 3}
 .pj-b{grid-column:8/13;grid-row:span 2}
 .pj-c{grid-column:8/13;grid-row:span 3}
@@ -305,12 +306,6 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .giant-track img{height:clamp(110px,18vw,300px);width:auto;opacity:.95}
 .legal{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;opacity:.75;border-top:1px solid rgba(255,255,255,.2);padding-top:20px}
 
-/* lightbox */
-.lightbox{position:fixed;inset:0;z-index:180;background:rgba(6,26,51,.92);display:grid;place-items:center;padding:6vh 6vw}
-.lightbox[hidden]{display:none}
-.lightbox img{max-width:100%;max-height:80vh;border-radius:4px}
-.lightbox p{color:#fff;margin-top:14px;font-weight:600}
-.lb-close{position:absolute;right:24px;top:18px;color:#fff;font-size:40px;font-weight:300;line-height:1}
 
 /* responsive */
 @media (max-width:1100px){
@@ -354,6 +349,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   .proj-grid .pj{grid-column:auto!important;grid-row:span 1!important}
   .proj-grid .pj-a{grid-column:1/-1!important;grid-row:span 2!important}
   .pj span{opacity:1;transform:none;font-size:11px}
+  .pj span em{display:none}
   .inspo-row{flex-direction:column;height:auto}
   .inspo-row figure{height:78vw;flex:none!important}
   .inspo-row figcaption span{opacity:.92;max-height:none;transform:none}

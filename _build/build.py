@@ -33,7 +33,7 @@ for p in P:
     p["slug"] = slugify(p.get("slug") or p["name"])
 
 C = json.load(open(os.path.join(O, "content.json"), encoding="utf-8"))
-html = env.get_template("index.html.j2").render(**C, project_count=len(P))
+html = env.get_template("index.html.j2").render(**C, project_count=len(P), featured=[p for p in P if p.get("featured")][:5])
 write("index.html", html)
 print("index.html", len(html), "bytes")
 

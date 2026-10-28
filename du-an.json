@@ -1,265 +1,6 @@
 {
   "projects": [
     {
-      "slug": "chung-cu-d-metropole-ha-tinh",
-      "name": "Chung cư D’ Metropole Hà Tĩnh",
-      "kind": "Căn hộ",
-      "location": "TP. Hà Tĩnh",
-      "style": "Hiện đại",
-      "year": "2026",
-      "unit": "HAVICO",
-      "tagline": "Sang trọng, hiện đại, tinh tế.",
-      "images": [
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/01.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/02.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/03.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/04.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/05.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/06.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/07.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/08.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/09.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/10.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/11.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/12.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/13.webp",
-        "/img/du-an/chung-cu-d-metropole-ha-tinh/14.webp"
-      ]
-    },
-    {
-      "slug": "can-ho-mau-du-an-chung-cu-sky-gemia",
-      "name": "Căn hộ mẫu dự án chung cư SKY GEMIA",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng (Hải Dương cũ)",
-      "style": "Hiện đại",
-      "year": "2026",
-      "unit": "HAVICO",
-      "tagline": "Sang trọng, hiện đại, tinh tế.",
-      "images": [
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/01.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/02.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/03.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/04.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/05.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/06.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/07.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/08.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/09.webp",
-        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/10.webp"
-      ]
-    },
-    {
-      "slug": "van-phong-ban-hang-du-an-noxh-van-my",
-      "name": "Văn phòng bán hàng dự án NOXH Vạn Mỹ",
-      "kind": "Văn phòng",
-      "location": "TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2026",
-      "unit": "HAVICO",
-      "tagline": "Sang trọng, hiện đại, tinh tế.",
-      "images": [
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/01.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/02.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/03.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/04.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/05.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/06.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/07.webp",
-        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/08.webp"
-      ]
-    },
-    {
-      "slug": "chung-cu-2-ngu-69m2",
-      "name": "Căn hộ 2 phòng ngủ 69 m², Hà Tĩnh",
-      "kind": "Căn hộ",
-      "location": "TP. Hà Tĩnh",
-      "style": "Hiện đại",
-      "year": "2026",
-      "unit": "HAVICO",
-      "tagline": "Hiện đại, sang trọng, tinh tế.",
-      "images": [
-        "/img/du-an/chung-cu-2-ngu-69m2/01.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/02.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/03.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/04.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/05.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/06.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/07.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/08.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/09.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/10.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/11.webp",
-        "/img/du-an/chung-cu-2-ngu-69m2/12.webp"
-      ]
-    },
-    {
-      "slug": "biet-thu-lien-ke-tai-vinhomes-royal-island",
-      "name": "Biệt thự liền kề tại Vinhomes Royal Island",
-      "kind": "Biệt thự",
-      "location": "TP. Hải Phòng",
-      "style": "Tân cổ điển",
-      "year": "2025",
-      "unit": "Á Đông Décor",
-      "tagline": "Sang trọng, tinh tế, đẳng cấp.",
-      "images": [
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/01.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/02.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/03.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/04.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/05.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/06.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/07.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/08.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/09.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/10.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/11.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/12.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/13.webp",
-        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/14.webp"
-      ]
-    },
-    {
-      "slug": "shophouse-golden-point",
-      "name": "Shophouse Golden Point",
-      "kind": "Thương mại",
-      "location": "TP. Hải Phòng",
-      "style": "Tân cổ điển",
-      "year": "2025",
-      "unit": "Á Đông Décor",
-      "tagline": "Sang trọng, tinh tế.",
-      "images": [
-        "/img/du-an/shophouse-golden-point/01.webp",
-        "/img/du-an/shophouse-golden-point/02.webp",
-        "/img/du-an/shophouse-golden-point/03.webp",
-        "/img/du-an/shophouse-golden-point/04.webp",
-        "/img/du-an/shophouse-golden-point/05.webp",
-        "/img/du-an/shophouse-golden-point/06.webp",
-        "/img/du-an/shophouse-golden-point/07.webp",
-        "/img/du-an/shophouse-golden-point/08.webp",
-        "/img/du-an/shophouse-golden-point/09.webp",
-        "/img/du-an/shophouse-golden-point/10.webp",
-        "/img/du-an/shophouse-golden-point/11.webp",
-        "/img/du-an/shophouse-golden-point/12.webp",
-        "/img/du-an/shophouse-golden-point/13.webp"
-      ]
-    },
-    {
-      "slug": "chung-cu-minato",
-      "name": "Chung cư Minato",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Sử dụng độ tương phản tinh tế, kết hợp ánh sáng vàng nhẹ tạo nên không gian sang trọng và ấm cúng.",
-      "images": [
-        "/img/du-an/chung-cu-minato/01.webp",
-        "/img/du-an/chung-cu-minato/02.webp",
-        "/img/du-an/chung-cu-minato/03.webp",
-        "/img/du-an/chung-cu-minato/04.webp",
-        "/img/du-an/chung-cu-minato/05.webp",
-        "/img/du-an/chung-cu-minato/06.webp",
-        "/img/du-an/chung-cu-minato/07.webp",
-        "/img/du-an/chung-cu-minato/08.webp",
-        "/img/du-an/chung-cu-minato/09.webp"
-      ]
-    },
-    {
-      "slug": "van-phong-tap-doan-sao-do",
-      "name": "Văn phòng Tập đoàn Sao Đỏ",
-      "kind": "Văn phòng",
-      "location": "Khu công nghiệp Nam Đình Vũ, Quận Hải An, TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "",
-      "images": [
-        "/img/du-an/van-phong-tap-doan-sao-do/01.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/02.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/03.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/04.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/05.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/06.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/07.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/08.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/09.webp",
-        "/img/du-an/van-phong-tap-doan-sao-do/10.webp"
-      ]
-    },
-    {
-      "slug": "chung-cu-sentosa-hai-phong",
-      "name": "Chung cư Sentosa Hải Phòng",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Sử dụng độ tương phản tinh tế, kết hợp ánh sáng vàng nhẹ tạo nên không gian sang trọng và ấm cúng.",
-      "images": [
-        "/img/du-an/chung-cu-sentosa-hai-phong/01.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/02.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/03.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/04.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/05.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/06.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/07.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/08.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/09.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/10.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/11.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/12.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/13.webp",
-        "/img/du-an/chung-cu-sentosa-hai-phong/14.webp"
-      ]
-    },
-    {
-      "slug": "biet-thu-hai-phong",
-      "name": "Biệt thự Hải Phòng",
-      "kind": "Biệt thự",
-      "location": "TP. Hải Phòng",
-      "style": "Tân cổ điển",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Sang trọng, tinh tế, đẳng cấp.",
-      "images": [
-        "/img/du-an/biet-thu-hai-phong/01.webp",
-        "/img/du-an/biet-thu-hai-phong/02.webp",
-        "/img/du-an/biet-thu-hai-phong/03.webp",
-        "/img/du-an/biet-thu-hai-phong/04.webp",
-        "/img/du-an/biet-thu-hai-phong/05.webp",
-        "/img/du-an/biet-thu-hai-phong/06.webp",
-        "/img/du-an/biet-thu-hai-phong/07.webp",
-        "/img/du-an/biet-thu-hai-phong/08.webp",
-        "/img/du-an/biet-thu-hai-phong/09.webp",
-        "/img/du-an/biet-thu-hai-phong/10.webp",
-        "/img/du-an/biet-thu-hai-phong/11.webp",
-        "/img/du-an/biet-thu-hai-phong/12.webp",
-        "/img/du-an/biet-thu-hai-phong/13.webp",
-        "/img/du-an/biet-thu-hai-phong/14.webp"
-      ]
-    },
-    {
-      "slug": "phong-cach-indochine",
-      "name": "Căn hộ Indochine, Hải Phòng",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng",
-      "style": "Indochine",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Tinh tế, sang trọng.",
-      "images": [
-        "/img/du-an/phong-cach-indochine/01.webp",
-        "/img/du-an/phong-cach-indochine/02.webp",
-        "/img/du-an/phong-cach-indochine/03.webp",
-        "/img/du-an/phong-cach-indochine/04.webp",
-        "/img/du-an/phong-cach-indochine/05.webp",
-        "/img/du-an/phong-cach-indochine/06.webp",
-        "/img/du-an/phong-cach-indochine/07.webp",
-        "/img/du-an/phong-cach-indochine/08.webp",
-        "/img/du-an/phong-cach-indochine/09.webp"
-      ]
-    },
-    {
       "slug": "khach-san-ninh-binh",
       "name": "Khách sạn Ninh Bình",
       "kind": "Khách sạn",
@@ -283,177 +24,8 @@
         "/img/du-an/khach-san-ninh-binh/12.webp",
         "/img/du-an/khach-san-ninh-binh/13.webp",
         "/img/du-an/khach-san-ninh-binh/14.webp"
-      ]
-    },
-    {
-      "slug": "chung-cu-minato-hai-phong",
-      "name": "Chung cư Minato Hải Phòng",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Sang trọng, tinh tế.",
-      "images": [
-        "/img/du-an/chung-cu-minato-hai-phong/01.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/02.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/03.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/04.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/05.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/06.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/07.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/08.webp",
-        "/img/du-an/chung-cu-minato-hai-phong/09.webp"
-      ]
-    },
-    {
-      "slug": "khach-san-ha-nam",
-      "name": "Khách sạn Hà Nam",
-      "kind": "Khách sạn",
-      "location": "Khu công nghiệp Đồng Văn Hà Nam",
-      "style": "Tân cổ điển",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Sang trọng, tinh tế, chi phí thấp.",
-      "images": [
-        "/img/du-an/khach-san-ha-nam/01.webp",
-        "/img/du-an/khach-san-ha-nam/02.webp",
-        "/img/du-an/khach-san-ha-nam/03.webp",
-        "/img/du-an/khach-san-ha-nam/04.webp",
-        "/img/du-an/khach-san-ha-nam/05.webp",
-        "/img/du-an/khach-san-ha-nam/06.webp",
-        "/img/du-an/khach-san-ha-nam/07.webp",
-        "/img/du-an/khach-san-ha-nam/08.webp",
-        "/img/du-an/khach-san-ha-nam/09.webp",
-        "/img/du-an/khach-san-ha-nam/10.webp",
-        "/img/du-an/khach-san-ha-nam/11.webp",
-        "/img/du-an/khach-san-ha-nam/12.webp",
-        "/img/du-an/khach-san-ha-nam/13.webp",
-        "/img/du-an/khach-san-ha-nam/14.webp"
-      ]
-    },
-    {
-      "slug": "can-ho-doji-golden-crown-hai-phong",
-      "name": "Căn hộ DOJI Golden Crown Hải Phòng",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Đơn giản, ấm áp, với sự tương phản tinh tế.",
-      "images": [
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/01.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/02.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/03.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/04.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/05.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/06.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/07.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/08.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/09.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/10.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/11.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/12.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/13.webp",
-        "/img/du-an/can-ho-doji-golden-crown-hai-phong/14.webp"
-      ]
-    },
-    {
-      "slug": "can-ho-the-minato-residence-hai-phong",
-      "name": "Căn hộ The Minato Residence Hải Phòng",
-      "kind": "Căn hộ",
-      "location": "TP. Hải Phòng",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "Đơn giản, ấm cúng, với sự tương phản tinh tế.",
-      "images": [
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/01.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/02.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/03.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/04.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/05.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/06.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/07.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/08.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/09.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/10.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/11.webp",
-        "/img/du-an/can-ho-the-minato-residence-hai-phong/12.webp"
-      ]
-    },
-    {
-      "slug": "can-ho-brg-diamond-residence-ha-noi",
-      "name": "Căn hộ BRG Diamond Residence, Hà Nội",
-      "kind": "Căn hộ",
-      "location": "Số 25 đường Lê Văn Lương, Hà Nội",
-      "style": "Hiện đại",
-      "year": "2024",
-      "unit": "Á Đông Décor",
-      "tagline": "",
-      "images": [
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/01.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/02.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/03.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/04.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/05.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/06.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/07.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/08.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/09.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/10.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/11.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/12.webp",
-        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/13.webp"
-      ]
-    },
-    {
-      "slug": "nha-pho-ba-trieu-ha-noi",
-      "name": "Nhà phố Bà Triệu, Hà Nội",
-      "kind": "Nhà phố",
-      "location": "Đường Bà Triệu - TP. Hà Nội",
-      "style": "Hiện đại",
-      "year": "2023",
-      "unit": "Á Đông Décor",
-      "tagline": "",
-      "images": [
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/01.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/02.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/03.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/04.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/05.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/06.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/07.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/08.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/09.webp",
-        "/img/du-an/nha-pho-ba-trieu-ha-noi/10.webp"
-      ]
-    },
-    {
-      "slug": "tru-so-vietchem-ha-noi",
-      "name": "Trụ sở VIETCHEM, Hà Nội",
-      "kind": "Văn phòng",
-      "location": "Số 41 phố Trạm, phường Long Biên, quận Long Biên, TP. Hà Nội, Việt Nam",
-      "style": "Hiện đại",
-      "year": "2023",
-      "unit": "Á Đông Décor",
-      "tagline": "",
-      "images": [
-        "/img/du-an/tru-so-vietchem-ha-noi/01.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/02.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/03.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/04.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/05.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/06.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/07.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/08.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/09.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/10.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/11.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/12.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/13.webp",
-        "/img/du-an/tru-so-vietchem-ha-noi/14.webp"
-      ]
+      ],
+      "featured": true
     },
     {
       "slug": "biet-thu-vinhomes-marina",
@@ -479,7 +51,455 @@
         "/img/du-an/biet-thu-vinhomes-marina/12.webp",
         "/img/du-an/biet-thu-vinhomes-marina/13.webp",
         "/img/du-an/biet-thu-vinhomes-marina/14.webp"
-      ]
+      ],
+      "featured": true
+    },
+    {
+      "slug": "chung-cu-d-metropole-ha-tinh",
+      "name": "Chung cư D’ Metropole Hà Tĩnh",
+      "kind": "Căn hộ",
+      "location": "TP. Hà Tĩnh",
+      "style": "Hiện đại",
+      "year": "2026",
+      "unit": "HAVICO",
+      "tagline": "Sang trọng, hiện đại, tinh tế.",
+      "images": [
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/01.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/02.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/03.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/04.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/05.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/06.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/07.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/08.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/09.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/10.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/11.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/12.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/13.webp",
+        "/img/du-an/chung-cu-d-metropole-ha-tinh/14.webp"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "tru-so-vietchem-ha-noi",
+      "name": "Trụ sở VIETCHEM, Hà Nội",
+      "kind": "Văn phòng",
+      "location": "Số 41 phố Trạm, phường Long Biên, quận Long Biên, TP. Hà Nội, Việt Nam",
+      "style": "Hiện đại",
+      "year": "2023",
+      "unit": "Á Đông Décor",
+      "tagline": "",
+      "images": [
+        "/img/du-an/tru-so-vietchem-ha-noi/01.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/02.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/03.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/04.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/05.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/06.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/07.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/08.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/09.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/10.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/11.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/12.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/13.webp",
+        "/img/du-an/tru-so-vietchem-ha-noi/14.webp"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "chung-cu-sentosa-hai-phong",
+      "name": "Chung cư Sentosa Hải Phòng",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Sử dụng độ tương phản tinh tế, kết hợp ánh sáng vàng nhẹ tạo nên không gian sang trọng và ấm cúng.",
+      "images": [
+        "/img/du-an/chung-cu-sentosa-hai-phong/01.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/02.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/03.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/04.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/05.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/06.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/07.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/08.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/09.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/10.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/11.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/12.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/13.webp",
+        "/img/du-an/chung-cu-sentosa-hai-phong/14.webp"
+      ],
+      "featured": true
+    },
+    {
+      "slug": "can-ho-mau-du-an-chung-cu-sky-gemia",
+      "name": "Căn hộ mẫu dự án chung cư SKY GEMIA",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng (Hải Dương cũ)",
+      "style": "Hiện đại",
+      "year": "2026",
+      "unit": "HAVICO",
+      "tagline": "Sang trọng, hiện đại, tinh tế.",
+      "images": [
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/01.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/02.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/03.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/04.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/05.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/06.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/07.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/08.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/09.webp",
+        "/img/du-an/can-ho-mau-du-an-chung-cu-sky-gemia/10.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "van-phong-ban-hang-du-an-noxh-van-my",
+      "name": "Văn phòng bán hàng dự án NOXH Vạn Mỹ",
+      "kind": "Văn phòng",
+      "location": "TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2026",
+      "unit": "HAVICO",
+      "tagline": "Sang trọng, hiện đại, tinh tế.",
+      "images": [
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/01.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/02.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/03.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/04.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/05.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/06.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/07.webp",
+        "/img/du-an/van-phong-ban-hang-du-an-noxh-van-my/08.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "chung-cu-2-ngu-69m2",
+      "name": "Căn hộ 2 phòng ngủ 69 m², Hà Tĩnh",
+      "kind": "Căn hộ",
+      "location": "TP. Hà Tĩnh",
+      "style": "Hiện đại",
+      "year": "2026",
+      "unit": "HAVICO",
+      "tagline": "Hiện đại, sang trọng, tinh tế.",
+      "images": [
+        "/img/du-an/chung-cu-2-ngu-69m2/01.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/02.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/03.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/04.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/05.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/06.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/07.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/08.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/09.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/10.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/11.webp",
+        "/img/du-an/chung-cu-2-ngu-69m2/12.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "biet-thu-lien-ke-tai-vinhomes-royal-island",
+      "name": "Biệt thự liền kề tại Vinhomes Royal Island",
+      "kind": "Biệt thự",
+      "location": "TP. Hải Phòng",
+      "style": "Tân cổ điển",
+      "year": "2025",
+      "unit": "Á Đông Décor",
+      "tagline": "Sang trọng, tinh tế, đẳng cấp.",
+      "images": [
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/01.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/02.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/03.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/04.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/05.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/06.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/07.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/08.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/09.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/10.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/11.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/12.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/13.webp",
+        "/img/du-an/biet-thu-lien-ke-tai-vinhomes-royal-island/14.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "shophouse-golden-point",
+      "name": "Shophouse Golden Point",
+      "kind": "Thương mại",
+      "location": "TP. Hải Phòng",
+      "style": "Tân cổ điển",
+      "year": "2025",
+      "unit": "Á Đông Décor",
+      "tagline": "Sang trọng, tinh tế.",
+      "images": [
+        "/img/du-an/shophouse-golden-point/01.webp",
+        "/img/du-an/shophouse-golden-point/02.webp",
+        "/img/du-an/shophouse-golden-point/03.webp",
+        "/img/du-an/shophouse-golden-point/04.webp",
+        "/img/du-an/shophouse-golden-point/05.webp",
+        "/img/du-an/shophouse-golden-point/06.webp",
+        "/img/du-an/shophouse-golden-point/07.webp",
+        "/img/du-an/shophouse-golden-point/08.webp",
+        "/img/du-an/shophouse-golden-point/09.webp",
+        "/img/du-an/shophouse-golden-point/10.webp",
+        "/img/du-an/shophouse-golden-point/11.webp",
+        "/img/du-an/shophouse-golden-point/12.webp",
+        "/img/du-an/shophouse-golden-point/13.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "chung-cu-minato",
+      "name": "Chung cư Minato",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Sử dụng độ tương phản tinh tế, kết hợp ánh sáng vàng nhẹ tạo nên không gian sang trọng và ấm cúng.",
+      "images": [
+        "/img/du-an/chung-cu-minato/01.webp",
+        "/img/du-an/chung-cu-minato/02.webp",
+        "/img/du-an/chung-cu-minato/03.webp",
+        "/img/du-an/chung-cu-minato/04.webp",
+        "/img/du-an/chung-cu-minato/05.webp",
+        "/img/du-an/chung-cu-minato/06.webp",
+        "/img/du-an/chung-cu-minato/07.webp",
+        "/img/du-an/chung-cu-minato/08.webp",
+        "/img/du-an/chung-cu-minato/09.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "van-phong-tap-doan-sao-do",
+      "name": "Văn phòng Tập đoàn Sao Đỏ",
+      "kind": "Văn phòng",
+      "location": "Khu công nghiệp Nam Đình Vũ, Quận Hải An, TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "",
+      "images": [
+        "/img/du-an/van-phong-tap-doan-sao-do/01.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/02.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/03.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/04.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/05.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/06.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/07.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/08.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/09.webp",
+        "/img/du-an/van-phong-tap-doan-sao-do/10.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "biet-thu-hai-phong",
+      "name": "Biệt thự Hải Phòng",
+      "kind": "Biệt thự",
+      "location": "TP. Hải Phòng",
+      "style": "Tân cổ điển",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Sang trọng, tinh tế, đẳng cấp.",
+      "images": [
+        "/img/du-an/biet-thu-hai-phong/01.webp",
+        "/img/du-an/biet-thu-hai-phong/02.webp",
+        "/img/du-an/biet-thu-hai-phong/03.webp",
+        "/img/du-an/biet-thu-hai-phong/04.webp",
+        "/img/du-an/biet-thu-hai-phong/05.webp",
+        "/img/du-an/biet-thu-hai-phong/06.webp",
+        "/img/du-an/biet-thu-hai-phong/07.webp",
+        "/img/du-an/biet-thu-hai-phong/08.webp",
+        "/img/du-an/biet-thu-hai-phong/09.webp",
+        "/img/du-an/biet-thu-hai-phong/10.webp",
+        "/img/du-an/biet-thu-hai-phong/11.webp",
+        "/img/du-an/biet-thu-hai-phong/12.webp",
+        "/img/du-an/biet-thu-hai-phong/13.webp",
+        "/img/du-an/biet-thu-hai-phong/14.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "phong-cach-indochine",
+      "name": "Căn hộ Indochine, Hải Phòng",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng",
+      "style": "Indochine",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Tinh tế, sang trọng.",
+      "images": [
+        "/img/du-an/phong-cach-indochine/01.webp",
+        "/img/du-an/phong-cach-indochine/02.webp",
+        "/img/du-an/phong-cach-indochine/03.webp",
+        "/img/du-an/phong-cach-indochine/04.webp",
+        "/img/du-an/phong-cach-indochine/05.webp",
+        "/img/du-an/phong-cach-indochine/06.webp",
+        "/img/du-an/phong-cach-indochine/07.webp",
+        "/img/du-an/phong-cach-indochine/08.webp",
+        "/img/du-an/phong-cach-indochine/09.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "chung-cu-minato-hai-phong",
+      "name": "Chung cư Minato Hải Phòng",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Sang trọng, tinh tế.",
+      "images": [
+        "/img/du-an/chung-cu-minato-hai-phong/01.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/02.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/03.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/04.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/05.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/06.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/07.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/08.webp",
+        "/img/du-an/chung-cu-minato-hai-phong/09.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "khach-san-ha-nam",
+      "name": "Khách sạn Hà Nam",
+      "kind": "Khách sạn",
+      "location": "Khu công nghiệp Đồng Văn Hà Nam",
+      "style": "Tân cổ điển",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Sang trọng, tinh tế, chi phí thấp.",
+      "images": [
+        "/img/du-an/khach-san-ha-nam/01.webp",
+        "/img/du-an/khach-san-ha-nam/02.webp",
+        "/img/du-an/khach-san-ha-nam/03.webp",
+        "/img/du-an/khach-san-ha-nam/04.webp",
+        "/img/du-an/khach-san-ha-nam/05.webp",
+        "/img/du-an/khach-san-ha-nam/06.webp",
+        "/img/du-an/khach-san-ha-nam/07.webp",
+        "/img/du-an/khach-san-ha-nam/08.webp",
+        "/img/du-an/khach-san-ha-nam/09.webp",
+        "/img/du-an/khach-san-ha-nam/10.webp",
+        "/img/du-an/khach-san-ha-nam/11.webp",
+        "/img/du-an/khach-san-ha-nam/12.webp",
+        "/img/du-an/khach-san-ha-nam/13.webp",
+        "/img/du-an/khach-san-ha-nam/14.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "can-ho-doji-golden-crown-hai-phong",
+      "name": "Căn hộ DOJI Golden Crown Hải Phòng",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Đơn giản, ấm áp, với sự tương phản tinh tế.",
+      "images": [
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/01.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/02.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/03.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/04.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/05.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/06.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/07.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/08.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/09.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/10.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/11.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/12.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/13.webp",
+        "/img/du-an/can-ho-doji-golden-crown-hai-phong/14.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "can-ho-the-minato-residence-hai-phong",
+      "name": "Căn hộ The Minato Residence Hải Phòng",
+      "kind": "Căn hộ",
+      "location": "TP. Hải Phòng",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "Đơn giản, ấm cúng, với sự tương phản tinh tế.",
+      "images": [
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/01.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/02.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/03.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/04.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/05.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/06.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/07.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/08.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/09.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/10.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/11.webp",
+        "/img/du-an/can-ho-the-minato-residence-hai-phong/12.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "can-ho-brg-diamond-residence-ha-noi",
+      "name": "Căn hộ BRG Diamond Residence, Hà Nội",
+      "kind": "Căn hộ",
+      "location": "Số 25 đường Lê Văn Lương, Hà Nội",
+      "style": "Hiện đại",
+      "year": "2024",
+      "unit": "Á Đông Décor",
+      "tagline": "",
+      "images": [
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/01.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/02.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/03.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/04.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/05.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/06.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/07.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/08.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/09.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/10.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/11.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/12.webp",
+        "/img/du-an/can-ho-brg-diamond-residence-ha-noi/13.webp"
+      ],
+      "featured": false
+    },
+    {
+      "slug": "nha-pho-ba-trieu-ha-noi",
+      "name": "Nhà phố Bà Triệu, Hà Nội",
+      "kind": "Nhà phố",
+      "location": "Đường Bà Triệu - TP. Hà Nội",
+      "style": "Hiện đại",
+      "year": "2023",
+      "unit": "Á Đông Décor",
+      "tagline": "",
+      "images": [
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/01.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/02.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/03.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/04.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/05.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/06.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/07.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/08.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/09.webp",
+        "/img/du-an/nha-pho-ba-trieu-ha-noi/10.webp"
+      ],
+      "featured": false
     },
     {
       "slug": "biet-thu-vinhomes-imperia",
@@ -503,7 +523,8 @@
         "/img/du-an/biet-thu-vinhomes-imperia/10.webp",
         "/img/du-an/biet-thu-vinhomes-imperia/11.webp",
         "/img/du-an/biet-thu-vinhomes-imperia/12.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "can-ho-hoang-huy-commerce",
@@ -525,7 +546,8 @@
         "/img/du-an/can-ho-hoang-huy-commerce/08.webp",
         "/img/du-an/can-ho-hoang-huy-commerce/09.webp",
         "/img/du-an/can-ho-hoang-huy-commerce/10.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "biet-thu-mang-dam-phong-cach-dia-trung-hai",
@@ -549,7 +571,8 @@
         "/img/du-an/biet-thu-mang-dam-phong-cach-dia-trung-hai/10.webp",
         "/img/du-an/biet-thu-mang-dam-phong-cach-dia-trung-hai/11.webp",
         "/img/du-an/biet-thu-mang-dam-phong-cach-dia-trung-hai/12.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "biet-thu-mang-dam-phong-cach-indochine",
@@ -568,7 +591,8 @@
         "/img/du-an/biet-thu-mang-dam-phong-cach-indochine/05.webp",
         "/img/du-an/biet-thu-mang-dam-phong-cach-indochine/06.webp",
         "/img/du-an/biet-thu-mang-dam-phong-cach-indochine/07.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "can-ho-chung-cu-brg-hai-phong",
@@ -585,7 +609,8 @@
         "/img/du-an/can-ho-chung-cu-brg-hai-phong/03.webp",
         "/img/du-an/can-ho-chung-cu-brg-hai-phong/04.webp",
         "/img/du-an/can-ho-chung-cu-brg-hai-phong/05.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "biet-thu-tan-co-dien",
@@ -611,7 +636,8 @@
         "/img/du-an/biet-thu-tan-co-dien/12.webp",
         "/img/du-an/biet-thu-tan-co-dien/13.webp",
         "/img/du-an/biet-thu-tan-co-dien/14.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "biet-thu-hien-dai-sang-trong",
@@ -637,7 +663,8 @@
         "/img/du-an/biet-thu-hien-dai-sang-trong/12.webp",
         "/img/du-an/biet-thu-hien-dai-sang-trong/13.webp",
         "/img/du-an/biet-thu-hien-dai-sang-trong/14.webp"
-      ]
+      ],
+      "featured": false
     },
     {
       "slug": "penthouse-vinhomes-metropolise",
@@ -657,7 +684,8 @@
         "/img/du-an/penthouse-vinhomes-metropolise/06.webp",
         "/img/du-an/penthouse-vinhomes-metropolise/07.webp",
         "/img/du-an/penthouse-vinhomes-metropolise/08.webp"
-      ]
+      ],
+      "featured": false
     }
   ]
 }

@@ -107,13 +107,6 @@
   },
   "projects": {
     "title": "Hoàn thiện nội thất trọn gói.",
-    "items": [
-      {"name": "Vlasta Sầm Sơn", "image": "/img/pr-vlasta-1.webp"},
-      {"name": "D’.Palais de Louis", "image": "/img/pr-palais-2.webp"},
-      {"name": "D’ Metropole Hà Tĩnh", "image": "/img/pr-metro-2.webp"},
-      {"name": "Đầm Vạc Hotel Vĩnh Phúc", "image": "/img/pr-damvac-2.webp"},
-      {"name": "Sentosa, Minato Residence", "image": "/img/pr-sentosa-1.webp"}
-    ],
     "note": "Một số hình ảnh phối cảnh do Á Đông Décor — công ty thành viên — thực hiện.",
     "styles_title": "Phong cách thiết kế của chúng tôi",
     "styles": [
