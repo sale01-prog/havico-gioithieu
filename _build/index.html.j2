@@ -32,6 +32,19 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css?v=22">
+<!-- Google tag (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Q0MK2Z8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-J76Q0MK2Z8");
+  // calls, emails and WhatsApp count as leads: GA4 does not track these links by itself
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"], a[href*="wa.me/"]');
+    if (a) gtag("event", "generate_lead", { method: a.protocol === "https:" ? "whatsapp" : a.protocol.slice(0, -1) });
+  });
+</script>
 </head>
 <body>
 
