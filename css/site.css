@@ -183,7 +183,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .pcard-img{aspect-ratio:1;background:linear-gradient(160deg,var(--ice),var(--mist));border-radius:4px;display:grid;place-items:center;overflow:hidden;position:relative}
 .pcard-img::before{content:"";position:absolute;right:-30%;bottom:-30%;width:80%;height:80%;background:var(--blue);opacity:.07;transform:rotate(45deg);transition:transform .8s var(--ease),opacity .5s}
 .pcard:hover .pcard-img::before{transform:rotate(45deg) scale(1.6);opacity:.12}
-.pcard-img img{width:82%;height:82%;object-fit:contain;transition:transform .8s var(--ease);pointer-events:none;-webkit-user-drag:none}
+.pcard-img img{position:absolute;inset:9%;width:82%;height:82%;object-fit:contain;transition:transform .8s var(--ease);pointer-events:none;-webkit-user-drag:none}
 .pcard:hover .pcard-img img{transform:scale(1.06) translateY(-6px)}
 .pcard figcaption{display:flex;gap:12px;align-items:baseline;margin-top:16px;font-size:20px;font-weight:700;letter-spacing:-.01em}
 .pcard small{font-size:12px;color:var(--blue);font-weight:600}
@@ -194,7 +194,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @property --a{syntax:"<angle>";inherits:true;initial-value:0deg}
 @property --o{syntax:"<number>";inherits:true;initial-value:0}
 .door-frame{position:relative;width:100%;aspect-ratio:3/4;background:linear-gradient(180deg,var(--ice),var(--mist));border-radius:4px;display:grid;place-items:center;overflow:hidden;cursor:pointer}
-.door3d{position:relative;height:86%;aspect-ratio:var(--ar);perspective:1300px;perspective-origin:20% 45%;--a:0deg;--o:0;transition:--a 1.5s var(--ease),--o 1.5s var(--ease)}
+/* absolute: a % height inside the aspect-ratio button is not reliably definite, so the door could render at the photo's natural size */
+.door3d{position:absolute;top:7%;left:50%;translate:-50% 0;height:86%;aspect-ratio:var(--ar);perspective:1300px;perspective-origin:20% 45%;--a:0deg;--o:0;transition:--a 1.5s var(--ease),--o 1.5s var(--ease)}
 .door.open .door3d{--a:-76deg;--o:1}
 @media (hover:hover) and (pointer:fine){.door:hover .door3d{--a:-76deg;--o:1}}
 .d-room,.d-leaf{position:absolute;left:var(--l);right:var(--r);top:var(--t);bottom:0}
