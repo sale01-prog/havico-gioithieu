@@ -239,7 +239,6 @@ content:
           - { name: location, label: Địa điểm, type: string }
           - { name: style, label: Phong cách, type: string }
           - { name: year, label: Năm, type: string }
-          - { name: status, label: Tình trạng, type: string }
           - { name: unit, label: Đơn vị thực hiện, type: string }
           - { name: tagline, label: Mô tả thêm, type: text }
           - { name: images, label: Ảnh (ảnh đầu là ảnh bìa), type: image, list: true }
