@@ -221,3 +221,25 @@ content:
           - { name: office_map, label: Link Google Maps văn phòng, type: string }
           - { name: factory, label: Địa chỉ nhà máy (Enter để xuống dòng), type: text }
           - { name: factory_map, label: Link Google Maps nhà máy, type: string }
+
+  - name: du-an
+    label: Trang dự án
+    type: file
+    path: du-an.json
+    format: json
+    fields:
+      - name: projects
+        label: Dự án (mỗi dự án một trang havicof.vn/du-an/...)
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Tên dự án, type: string }
+          - { name: slug, label: "Đường dẫn (để trống: tự tạo từ tên)", type: string }
+          - { name: kind, label: Loại (Căn hộ / Biệt thự / Khách sạn / Văn phòng / Nhà phố / Thương mại), type: string }
+          - { name: location, label: Địa điểm, type: string }
+          - { name: style, label: Phong cách, type: string }
+          - { name: year, label: Năm, type: string }
+          - { name: status, label: Tình trạng, type: string }
+          - { name: unit, label: Đơn vị thực hiện, type: string }
+          - { name: tagline, label: Mô tả thêm, type: text }
+          - { name: images, label: Ảnh (ảnh đầu là ảnh bìa), type: image, list: true }

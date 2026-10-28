@@ -1,6 +1,6 @@
-"""content.json + _build/index.html.j2 -> index.html. Needs jinja2 (pip install jinja2).
+"""content.json + _build/index.html.j2 -> index.html; du-an.json -> du-an/*.html + sitemap.xml. Needs jinja2 (pip install jinja2).
 Runs on GitHub (.github/workflows/pages.yml) after every Pages CMS save; run it locally to preview."""
-import json, os, re
+import json, os, re, glob, unicodedata
 from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup, escape
 
@@ -20,7 +20,30 @@ env.filters["tel"] = lambda s: re.sub(r"[^\d+]", "", s or "")
 env.globals["DOORS"] = DOORS
 env.policies["json.dumps_kwargs"] = {"ensure_ascii": False}
 
+def write(path, html):
+    open(os.path.join(O, path), "w", encoding="utf-8", newline="\n").write(html)
+
+def slugify(s):
+    s = unicodedata.normalize("NFD", s.replace("đ", "d").replace("Đ", "D"))
+    return re.sub(r"[^a-z0-9]+", "-", "".join(c for c in s if not unicodedata.combining(c)).lower()).strip("-")
+
+# projects added in the CMS may come without a slug or photos
+P = [p for p in json.load(open(os.path.join(O, "du-an.json"), encoding="utf-8"))["projects"] if p.get("name") and p.get("images")]
+for p in P:
+    p["slug"] = slugify(p.get("slug") or p["name"])
+
 C = json.load(open(os.path.join(O, "content.json"), encoding="utf-8"))
-html = env.get_template("index.html.j2").render(**C)
-open(os.path.join(O, "index.html"), "w", encoding="utf-8", newline="\n").write(html)
+html = env.get_template("index.html.j2").render(**C, project_count=len(P))
+write("index.html", html)
 print("index.html", len(html), "bytes")
+
+os.makedirs(os.path.join(O, "du-an"), exist_ok=True)
+for f in glob.glob(os.path.join(O, "du-an", "*.html")):  # drop pages of deleted projects
+    os.remove(f)
+write("du-an/index.html", env.get_template("du-an-list.html.j2").render(projects=P))
+for i, p in enumerate(P):
+    write(f"du-an/{p['slug']}.html", env.get_template("du-an.html.j2").render(p=p, others=(P[i + 1:] + P[:i])[:3]))
+urls = ["", "du-an/"] + [f"du-an/{p['slug']}.html" for p in P]
+write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+      + "".join(f"  <url><loc>https://havicof.vn/{u}</loc></url>\n" for u in urls) + "</urlset>\n")
+print(len(P), "project pages")

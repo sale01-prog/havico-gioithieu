@@ -1,0 +1,56 @@
+{% extends "du-an-base.html.j2" %}
+{% set summary = p.kind ~ " tại " ~ p.location ~ (", phong cách " ~ p.style | lower if p.style else "") ~ "." %}
+{% block title %}{{ p.name }} | Dự án nội thất HAVICO{% endblock %}
+{% block desc %}{{ summary }} Nội thất thực hiện bởi {{ p.unit }}{{ " — công ty thành viên HAVICO" if p.unit != "HAVICO" }}.{% endblock %}
+{% block path %}du-an/{{ p.slug }}.html{% endblock %}
+{% block og %}{{ p.images[0] }}{% endblock %}
+{% block main %}
+  <article class="pj">
+    <p class="crumb"><a href="/">Trang chủ</a> / <a href="/du-an/">Dự án</a> / {{ p.kind }}</p>
+    <h1>{{ p.name }}</h1>
+    <p class="lead">{{ summary }}{% if p.tagline %} {{ p.tagline }}{% endif %}</p>
+    <dl class="meta">
+      <div><dt>Địa điểm</dt><dd>{{ p.location }}</dd></div>
+      {%- if p.style %}<div><dt>Phong cách</dt><dd>{{ p.style }}</dd></div>{% endif %}
+      <div><dt>Năm</dt><dd>{{ p.year }}</dd></div>
+      <div><dt>Tình trạng</dt><dd>{{ p.status }}</dd></div>
+      <div><dt>Thực hiện</dt><dd>{{ p.unit }}</dd></div>
+    </dl>
+    <div class="gal" id="gal">
+      {%- for im in p.images %}
+      <a href="{{ im }}"><img src="{{ im }}" alt="{{ p.name }} – ảnh {{ loop.index }}"{% if not loop.first %} loading="lazy"{% endif %}></a>
+      {%- endfor %}
+    </div>
+    {%- if p.unit != "HAVICO" %}
+    <p class="note">Hình ảnh do {{ p.unit }}, công ty thành viên của HAVICO, thực hiện.</p>
+    {%- endif %}
+  </article>
+  <section class="more">
+    <h2>Dự án khác</h2>
+    <div class="cards">
+      {%- for o in others %}{% include "du-an-card.html.j2" %}{% endfor %}
+    </div>
+    <a class="btn ghost" href="/du-an/">Xem tất cả dự án</a>
+  </section>
+{% endblock %}
+{% block script %}
+<div class="lb" id="lb" hidden><button aria-label="Đóng">×</button><button class="prev" aria-label="Ảnh trước">‹</button><img alt=""><button class="next" aria-label="Ảnh sau">›</button></div>
+<script>
+(function () {
+  var links = [].slice.call(document.querySelectorAll("#gal a")), lb = document.getElementById("lb"), img = lb.querySelector("img"), i = 0;
+  function show(n) { i = (n + links.length) % links.length; img.src = links[i].href; img.alt = links[i].firstChild.alt; lb.hidden = false; }
+  links.forEach(function (a, n) { a.addEventListener("click", function (e) { e.preventDefault(); show(n); }); });
+  lb.addEventListener("click", function (e) {
+    if (e.target.classList.contains("prev")) show(i - 1);
+    else if (e.target.classList.contains("next")) show(i + 1);
+    else if (e.target !== img) lb.hidden = true;
+  });
+  document.addEventListener("keydown", function (e) {
+    if (lb.hidden) return;
+    if (e.key === "Escape") lb.hidden = true;
+    if (e.key === "ArrowLeft") show(i - 1);
+    if (e.key === "ArrowRight") show(i + 1);
+  });
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "du-an-base.html.j2" %}
+{% block title %}Dự án nội thất | Công ty cổ phần gỗ HAVICO{% endblock %}
+{% block desc %}{{ projects | length }} dự án nội thất căn hộ, biệt thự, khách sạn, văn phòng do HAVICO và công ty thành viên Á Đông Décor thực hiện.{% endblock %}
+{% block path %}du-an/{% endblock %}
+{% block main %}
+  <section class="list">
+    <p class="crumb"><a href="/">Trang chủ</a> / Dự án</p>
+    <h1>Dự án nội thất</h1>
+    <p class="lead">{{ projects | length }} công trình căn hộ, biệt thự, khách sạn và văn phòng do HAVICO và công ty thành viên Á Đông Décor thực hiện.</p>
+    <div class="chips" id="chips">
+      <button class="on" data-kind="">Tất cả</button>
+      {%- for k in projects | map(attribute="kind") | unique | sort %}<button data-kind="{{ k }}">{{ k }}</button>{% endfor %}
+    </div>
+    <div class="cards" id="cards">
+      {%- for o in projects %}{% include "du-an-card.html.j2" %}{% endfor %}
+    </div>
+  </section>
+{% endblock %}
+{% block script %}
+<script>
+document.getElementById("chips").addEventListener("click", function (e) {
+  var k = e.target.dataset.kind;
+  if (k === undefined) return;
+  [].forEach.call(this.children, function (b) { b.classList.toggle("on", b === e.target); });
+  [].forEach.call(document.querySelectorAll("#cards .card"), function (c) { c.hidden = k && c.dataset.kind !== k; });
+});
+</script>
+{% endblock %}
