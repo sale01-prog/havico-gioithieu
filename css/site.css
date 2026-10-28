@@ -69,7 +69,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .burger[aria-expanded="true"] i:first-child{top:21px;transform:rotate(45deg)}
 .burger[aria-expanded="true"] i:last-child{top:21px;transform:rotate(-45deg)}
 /* top padding clears the header logo; auto margins centre the list when it fits and let it scroll when it does not (large system font) */
-.mnav{position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;gap:4px;padding:96px 24px 32px;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;transition:visibility 0s .8s}
+.mnav{position:fixed;inset:0;z-index:90;display:flex;flex-direction:column;gap:4px;padding:84px 24px 20px;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;transition:visibility 0s .8s}
 /* the blue circle grows with transform (GPU) from the burger; animating clip-path repainted the whole screen each frame and stuttered on phones */
 .mnav::before{content:"";position:fixed;z-index:-1;right:calc(38px - 150vmax);top:calc(40px - 150vmax);width:300vmax;height:300vmax;border-radius:50%;background:var(--blue);transform:scale(0);transition:transform .8s var(--ease);will-change:transform;pointer-events:none}
 .mnav>*{opacity:0;transform:translateY(18px);transition:opacity .3s,transform .5s var(--ease)}
@@ -83,7 +83,8 @@ body.menu-on .head .logo .lb{opacity:0}
 .mnav>:last-child{margin-bottom:auto}
 .mnav.open{visibility:visible;transition-delay:0s}
 .mnav.open::before{transform:scale(1)}
-.mnav a{color:#fff;font-size:clamp(30px,9vw,44px);font-weight:700;letter-spacing:-.02em;display:flex;align-items:baseline;gap:14px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+/* sized by screen height too, so all 7 links plus catalogue and social fit one screen */
+.mnav a{color:#fff;font-size:clamp(20px,min(8.5vw,4vh),40px);font-weight:700;letter-spacing:-.02em;display:flex;align-items:baseline;gap:14px;padding:min(6px,.7vh) 0;border-bottom:1px solid rgba(255,255,255,.18)}
 .mnav small{font-size:12px;font-weight:500;opacity:.6}
 
 /* hero */
@@ -329,8 +330,8 @@ body.menu-on .head .logo .lb{opacity:0}
 .pill .dl{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font-size:13px}
 .head.solid .pill .dl{background:#fff;color:var(--blue)}
 .pill:hover .dl{transform:translateY(3px)}
-.mnav-dl{margin-top:22px;border:0!important;font-size:16px!important;font-weight:600!important;background:#fff;color:var(--blue)!important;border-radius:999px;padding:14px 22px!important;width:max-content}
-.mnav .social{margin-top:22px}
+.mnav-dl{margin-top:min(22px,2.4vh);border:0!important;font-size:16px!important;font-weight:600!important;background:#fff;color:var(--blue)!important;border-radius:999px;padding:14px 22px!important;width:max-content}
+.mnav .social{margin-top:min(22px,2.4vh)}
 .giant{overflow:hidden;margin:clamp(60px,10vh,120px) 0 20px;position:relative;z-index:1}
 .giant-track{display:inline-flex;gap:6vw;will-change:transform}
 .giant-track img{height:clamp(110px,18vw,300px);width:auto;opacity:.95}
