@@ -39,7 +39,7 @@ content:
               - { name: value, label: Số, type: number }
               - { name: prefix, label: Chữ trước số (vd ~), type: string }
               - { name: suffix, label: Chữ sau số (vd +), type: string }
-              - { name: year, label: Là năm (không đếm, không dấu chấm), type: boolean }
+              - { name: year, label: "Là năm (không đếm, không dấu chấm)", type: boolean }
               - { name: label, label: Chú thích, type: string }
 
       - name: marquee
@@ -110,7 +110,7 @@ content:
               - { name: value, label: Số, type: number }
               - { name: prefix, label: Chữ trước số (vd ~), type: string }
               - { name: suffix, label: Chữ sau số (vd +), type: string }
-              - { name: year, label: Là năm (không đếm, không dấu chấm), type: boolean }
+              - { name: year, label: "Là năm (không đếm, không dấu chấm)", type: boolean }
               - { name: label, label: Chú thích, type: string }
 
       - name: products
