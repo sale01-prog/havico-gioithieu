@@ -8,6 +8,10 @@
   // Reduced-motion users keep the reveals but lose smooth-scroll and velocity effects.
   const motion = hasGsap;
   let lenis;
+  // a reload replays the intro, so always start from the top
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (hasGsap) ScrollTrigger.clearScrollMemory("manual");
+  if (!location.hash) scrollTo(0, 0);
 
   /* ---------- social links (edit URLs here) ---------- */
   // An empty URL renders the icon as disabled.
@@ -224,16 +228,6 @@
   gsap.from(".ab-badge", {scale: 0, rotate: -90, duration: 1.4, ease: "back.out(1.6)", scrollTrigger: {trigger: ".about-visual", start: "top 70%", once: true}});
   gsap.to(".ab-2", {yPercent: -12, ease: "none", scrollTrigger: {trigger: ".about-visual", start: "top bottom", end: "bottom top", scrub: true}});
 
-  // capability chapters drive the sticky image (sticky on phones too)
-  const stageImgs = $$(".cap-stage img"), no = $(".cap-no");
-  $$(".cap-item").forEach((it, i) => ScrollTrigger.create({trigger: it, start: "top 55%", end: "bottom 55%", onToggle: s => {
-    if (!s.isActive) return;
-    $$(".cap-item").forEach(x => x.classList.toggle("on", x === it));
-    stageImgs.forEach((im, j) => im.classList.toggle("on", j === i));
-    no.textContent = "0" + (i + 1);
-    $$("[data-count]", it).forEach(countUp);
-  }}));
-
   /* section-specific motion that differs by viewport */
   const mm = gsap.matchMedia();
   const tlItems = $$(".tl-item"), yearEl = $(".tl-year");
@@ -254,6 +248,17 @@
     // phones: each door swings open while it sits in the middle of the screen
     $$(".door").forEach(d => ScrollTrigger.create({trigger: d.querySelector(".door-frame"), start: "top 55%", end: "bottom 35%", onToggle: s => setDoor(d, s.isActive)}));
   });
+
+  // capability chapters drive the sticky image (sticky on phones too)
+  // created after the pinned timeline so their start positions include its pin spacing
+  const stageImgs = $$(".cap-stage img"), no = $(".cap-no");
+  $$(".cap-item").forEach((it, i) => ScrollTrigger.create({trigger: it, start: "top 55%", end: "bottom 55%", onToggle: s => {
+    if (!s.isActive) return;
+    $$(".cap-item").forEach(x => x.classList.toggle("on", x === it));
+    stageImgs.forEach((im, j) => im.classList.toggle("on", j === i));
+    no.textContent = "0" + (i + 1);
+    $$("[data-count]", it).forEach(countUp);
+  }}));
 
   /* products */
   gsap.from(".pcard", {autoAlpha: 0, x: 120, duration: 1.4, ease: "expo.out", stagger: .08, scrollTrigger: {trigger: ".rail", start: "top 85%", once: true}});
