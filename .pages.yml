@@ -1,0 +1,223 @@
+# Pages CMS (https://app.pagescms.org): edit the text and photos of havicof.vn in the browser.
+# Every save commits content.json; .github/workflows/pages.yml rebuilds index.html and publishes it.
+media:
+  input: img
+  output: /img
+  extensions: [webp, jpg, jpeg, png, svg]
+
+content:
+  - name: site
+    label: Nội dung trang
+    type: file
+    path: content.json
+    format: json
+    fields:
+      - name: seo
+        label: Google & chia sẻ
+        type: object
+        fields:
+          - { name: title, label: Tiêu đề trang, type: string }
+          - { name: description, label: Mô tả trên Google, type: text }
+          - { name: share, label: Mô tả khi chia sẻ Facebook/Zalo, type: text }
+
+      - name: hero
+        label: Ảnh bìa đầu trang
+        type: object
+        fields:
+          - { name: eyebrow, label: Dòng chữ nhỏ, type: string }
+          - { name: line1, label: Tiêu đề dòng 1, type: string }
+          - { name: line2, label: Tiêu đề dòng 2, type: string }
+          - { name: line3, label: Tiêu đề dòng 3 (chữ viền), type: string }
+          - { name: sub, label: Đoạn giới thiệu, type: text }
+          - { name: image, label: Ảnh nền, type: image }
+          - { name: image_alt, label: Mô tả ảnh nền, type: string }
+          - name: stats
+            label: Con số
+            type: object
+            list: true
+            fields:
+              - { name: value, label: Số, type: number }
+              - { name: prefix, label: Chữ trước số (vd ~), type: string }
+              - { name: suffix, label: Chữ sau số (vd +), type: string }
+              - { name: year, label: Là năm (không đếm, không dấu chấm), type: boolean }
+              - { name: label, label: Chú thích, type: string }
+
+      - name: marquee
+        label: Dải chữ chạy
+        type: string
+        list: true
+
+      - name: about
+        label: 01 — Giới thiệu
+        type: object
+        fields:
+          - { name: title, label: Tiêu đề, type: string }
+          - { name: lead, label: Đoạn giới thiệu, type: text }
+          - name: facts
+            label: Thông tin
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Mục, type: string }
+              - { name: text, label: Nội dung, type: string }
+          - { name: image1, label: Ảnh lớn, type: image }
+          - { name: image1_alt, label: Mô tả ảnh lớn, type: string }
+          - { name: image2, label: Ảnh nhỏ, type: image }
+          - { name: image2_alt, label: Mô tả ảnh nhỏ, type: string }
+          - { name: badge_number, label: Số năm trên huy hiệu, type: string }
+          - { name: badge_text, label: Chữ trên huy hiệu (Enter để xuống dòng), type: text }
+
+      - name: timeline
+        label: 02 — Hành trình
+        type: object
+        fields:
+          - name: items
+            label: Mốc thời gian
+            type: object
+            list: true
+            fields:
+              - { name: year, label: Năm, type: string }
+              - { name: text, label: Sự kiện, type: string }
+          - { name: photo, label: Ảnh cuối dải, type: image }
+          - { name: photo_alt, label: Mô tả ảnh, type: string }
+
+      - name: capability
+        label: 03 — Năng lực
+        type: object
+        fields:
+          - { name: title, label: Tiêu đề, type: string }
+          - name: images
+            label: Ảnh (đổi theo từng mục khi cuộn)
+            type: image
+            options:
+              multiple: { max: 8 }
+          - name: items
+            label: Mục
+            type: object
+            list: true
+            fields:
+              - { name: kicker, label: Nhãn nhỏ (vd 01 · Thiết bị), type: string }
+              - { name: title, label: Tiêu đề, type: string }
+              - { name: points, label: Gạch đầu dòng, type: string, list: true }
+              - { name: note, label: Ghi chú, type: string }
+          - { name: scale_kicker, label: Mục quy mô — nhãn nhỏ, type: string }
+          - { name: scale_title, label: Mục quy mô — tiêu đề, type: string }
+          - name: scale_stats
+            label: Mục quy mô — con số
+            type: object
+            list: true
+            fields:
+              - { name: value, label: Số, type: number }
+              - { name: prefix, label: Chữ trước số (vd ~), type: string }
+              - { name: suffix, label: Chữ sau số (vd +), type: string }
+              - { name: year, label: Là năm (không đếm, không dấu chấm), type: boolean }
+              - { name: label, label: Chú thích, type: string }
+
+      - name: products
+        label: 04 — Sản phẩm
+        type: object
+        fields:
+          - { name: title, label: Tiêu đề, type: string }
+          - { name: export_tab, label: Tab 1 — tên, type: string }
+          - { name: export_lead, label: Tab 1 — giới thiệu, type: text }
+          - name: export_cards
+            label: Tab 1 — danh mục
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Ảnh, type: image }
+              - { name: alt, label: Mô tả ảnh, type: string }
+              - { name: caption, label: Tên danh mục, type: string }
+          - name: export_specs
+            label: Tab 1 — thông số
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Mục, type: string }
+              - { name: text, label: Nội dung, type: string }
+          - { name: project_tab, label: Tab 2 — tên, type: string }
+          - { name: project_lead, label: Tab 2 — giới thiệu, type: text }
+          - name: doors
+            label: Tab 2 — 3 loại cửa (ảnh cửa cố định, giữ đúng thứ tự)
+            type: object
+            list: true
+            fields:
+              - { name: title, label: Tên, type: string }
+              - { name: text, label: Mô tả, type: text }
+          - { name: kitchen_image, label: Tủ bếp — ảnh, type: image }
+          - { name: kitchen_alt, label: Tủ bếp — mô tả ảnh, type: string }
+          - { name: kitchen_title, label: Tủ bếp — tiêu đề, type: string }
+          - { name: kitchen_text, label: Tủ bếp — nội dung, type: text }
+          - name: materials
+            label: Tủ bếp — vật liệu
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Tên, type: string }
+              - { name: text, label: Mô tả, type: string }
+
+      - name: projects
+        label: 05 — Dự án
+        type: object
+        fields:
+          - { name: title, label: Tiêu đề, type: string }
+          - name: items
+            label: Dự án (giữ 5 dự án để lưới ảnh đẹp)
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Tên dự án, type: string }
+              - { name: image, label: Ảnh, type: image }
+          - { name: note, label: Ghi chú dưới ảnh, type: string }
+          - { name: styles_title, label: Phong cách — tiêu đề, type: string }
+          - name: styles
+            label: Phong cách
+            type: object
+            list: true
+            fields:
+              - { name: name, label: Tên, type: string }
+              - { name: image, label: Ảnh, type: image }
+              - { name: alt, label: Mô tả ảnh, type: string }
+              - { name: text, label: Nội dung, type: text }
+
+      - name: certs
+        label: 06 — Chứng nhận & đối tác
+        type: object
+        fields:
+          - { name: title, label: Tiêu đề, type: string }
+          - name: cards
+            label: Chứng nhận
+            type: object
+            list: true
+            fields:
+              - { name: kicker, label: Nhãn nhỏ, type: string }
+              - { name: title, label: Tên, type: string }
+              - { name: text, label: Nội dung, type: string }
+          - { name: badges_kicker, label: Biểu tượng — nhãn, type: string }
+          - name: badges
+            label: Biểu tượng tiêu chuẩn
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Ảnh, type: image }
+              - { name: name, label: Tên, type: string }
+          - { name: partners_title, label: Đối tác — tiêu đề, type: string }
+          - name: partners
+            label: Logo đối tác
+            type: object
+            list: true
+            fields:
+              - { name: image, label: Ảnh, type: image }
+              - { name: name, label: Tên, type: string }
+
+      - name: contact
+        label: 07 — Liên hệ
+        type: object
+        fields:
+          - { name: title, label: Câu kêu gọi, type: string }
+          - { name: email, label: Email, type: string }
+          - { name: phone, label: Điện thoại, type: string }
+          - { name: office, label: Địa chỉ văn phòng (Enter để xuống dòng), type: text }
+          - { name: office_map, label: Link Google Maps văn phòng, type: string }
+          - { name: factory, label: Địa chỉ nhà máy (Enter để xuống dòng), type: text }
+          - { name: factory_map, label: Link Google Maps nhà máy, type: string }

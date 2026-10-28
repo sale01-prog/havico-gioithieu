@@ -1,0 +1,161 @@
+{
+  "seo": {
+    "title": "Công ty cổ phần gỗ HAVICO",
+    "description": "Công ty cổ phần gỗ HAVICO – thiết kế, sản xuất, lắp đặt nội thất gỗ cho dự án và xuất khẩu. Nhà máy 14.000 m² tại Hải Phòng, ISO 9001:2015, FSC.",
+    "share": "Thiết kế, sản xuất, lắp đặt nội thất gỗ cho dự án và xuất khẩu. Nhà máy 14.000 m² tại Hải Phòng."
+  },
+  "hero": {
+    "eyebrow": "Công ty cổ phần gỗ HAVICO",
+    "line1": "Từ bản vẽ",
+    "line2": "đến ngày bàn giao,",
+    "line3": "HAVICO lo trọn.",
+    "sub": "Có nhà máy riêng 14.000 m² tại Hải Phòng, chúng tôi tự tay thiết kế, sản xuất và lắp đặt nội thất gỗ — cho công trình trong nước lẫn đơn hàng xuất khẩu.",
+    "image": "/img/hero-living.webp",
+    "image_alt": "Không gian phòng khách nghỉ dưỡng với nội thất gỗ HAVICO",
+    "stats": [
+      {"value": 14000, "prefix": "", "suffix": "", "year": false, "label": "m² diện tích nhà máy"},
+      {"value": 150, "prefix": "", "suffix": "+", "year": false, "label": "lao động lành nghề"},
+      {"value": 30, "prefix": "~", "suffix": "", "year": false, "label": "container / tháng"},
+      {"value": 1990, "prefix": "", "suffix": "", "year": true, "label": "khởi nguồn từ xưởng gỗ"}
+    ]
+  },
+  "marquee": ["Việt Nam", "Hoa Kỳ", "Châu Âu", "Nhật Bản", "ISO 9001:2015", "FSC® Chain of Custody", "HOMAG Germany"],
+  "about": {
+    "title": "Hơn ba thập kỷ gắn bó với nghề gỗ.",
+    "lead": "Khởi đầu từ một xưởng gỗ truyền thống năm 1990, HAVICO ngày nay là doanh nghiệp thiết kế, sản xuất và lắp đặt nội thất gỗ cho dự án và thị trường xuất khẩu, với nhà máy 14.000 m² tại An Lão, Hải Phòng.",
+    "facts": [
+      {"label": "Thành lập", "text": "26/04/2023 · Công ty cổ phần"},
+      {"label": "Lĩnh vực", "text": "Thiết kế, sản xuất, lắp đặt nội thất dự án"},
+      {"label": "Thị trường", "text": "Việt Nam, Hoa Kỳ, châu Âu, Nhật Bản"},
+      {"label": "Văn phòng", "text": "423+424 Võ Nguyên Giáp, phường Lê Chân, Hải Phòng"},
+      {"label": "Nhà máy", "text": "Chân Cầu Vàng 2, phường An Lão, Hải Phòng"}
+    ],
+    "image1": "/img/workshop-old.webp?v=2",
+    "image1_alt": "Người thợ mộc bên bàn bào trong xưởng gỗ truyền thống",
+    "image2": "/img/about-aerial.webp",
+    "image2_alt": "Toàn cảnh nhà máy HAVICO tại An Lão, Hải Phòng",
+    "badge_number": "35",
+    "badge_text": "năm giữ lửa\nnghề mộc"
+  },
+  "timeline": {
+    "items": [
+      {"year": "1990", "text": "Bắt đầu từ xưởng gỗ truyền thống."},
+      {"year": "2003", "text": "Mở rộng quy mô sản xuất."},
+      {"year": "2014", "text": "Thành lập Công ty TNHH Xây dựng và Thương mại Quốc tế Á Đông."},
+      {"year": "2015", "text": "Thành lập văn phòng đại diện tại Đà Nẵng."},
+      {"year": "2023", "text": "Thành lập Công ty cổ phần Gỗ HAVICO."},
+      {"year": "2025", "text": "Thành lập văn phòng đại diện tại Hà Nội."}
+    ],
+    "photo": "/img/factory-front.webp",
+    "photo_alt": "Cổng nhà máy HAVICO Furniture"
+  },
+  "capability": {
+    "title": "Nhà máy chuẩn xuất khẩu.",
+    "images": ["/img/workshop-1.webp?v=2", "/img/cap-finish.webp", "/img/cap-detail.webp", "/img/aerial-road.webp"],
+    "items": [
+      {"kicker": "01 · Thiết bị", "title": "Dây chuyền HOMAG từ Đức",
+       "points": ["Máy cắt ván panel SAWTEQ – HOMAG", "Trung tâm gia công CNC Nesting", "Máy dán cạnh EDGETEQ, khoan CNC DRILLTEQ – HOMAG", "Máy chà nhám băng rộng", "Dây chuyền ép, lắp ráp và đóng gói tự động"],
+       "note": "Cùng hơn 100 thiết bị chuyên dụng cho toàn bộ quy trình."},
+      {"kicker": "02 · Sơn & hoàn thiện", "title": "Phòng sơn kín, kiểm soát môi trường",
+       "points": ["Kiểm soát bụi, nhiệt độ và độ ẩm", "Hệ thống cấp gió – hút bụi tuần hoàn", "Khu vực sấy và UV curing hiện đại", "Hoàn thiện PU, NC, UV và sơn gốc nước"],
+       "note": ""},
+      {"kicker": "03 · Chất lượng", "title": "Kiểm soát nhiều công đoạn",
+       "points": ["Kiểm tra nguyên liệu đầu vào", "Kiểm tra trong quá trình sản xuất", "Kiểm tra thành phẩm: ngoại quan, kích thước, chức năng, đóng gói", "Quản lý nhà xưởng theo 5S"],
+       "note": ""}
+    ],
+    "scale_kicker": "04 · Quy mô",
+    "scale_title": "Sẵn sàng cho đơn hàng lớn",
+    "scale_stats": [
+      {"value": 14000, "prefix": "", "suffix": "", "year": false, "label": "m² nhà máy"},
+      {"value": 150, "prefix": "", "suffix": "+", "year": false, "label": "lao động"},
+      {"value": 30, "prefix": "~", "suffix": "", "year": false, "label": "container/tháng"}
+    ]
+  },
+  "products": {
+    "title": "Hai dòng sản phẩm chủ lực.",
+    "export_tab": "Sản phẩm xuất khẩu",
+    "export_lead": "Từ nội thất hoàn thiện đến sản phẩm RTA, thiết kế và sản xuất theo tiêu chuẩn quốc tế, đáp ứng linh hoạt thị trường xuất khẩu.",
+    "export_cards": [
+      {"image": "/img/pc-sierra-set.webp", "alt": "Bộ sofa ngoài trời gỗ", "caption": "Đồ ngoài trời"},
+      {"image": "/img/pc-wishbone.webp", "alt": "Bộ bàn ghế ăn gỗ", "caption": "Bàn ghế ăn"},
+      {"image": "/img/pc-lenia-queen.webp", "alt": "Giường ngủ gỗ", "caption": "Giường ngủ"},
+      {"image": "/img/pc-night.webp", "alt": "Tủ đầu giường", "caption": "Tủ đầu giường"},
+      {"image": "/img/pc-tv.webp", "alt": "Kệ tivi", "caption": "Kệ tivi"},
+      {"image": "/img/pc-shelf.webp", "alt": "Kệ giá sách", "caption": "Kệ giá sách"}
+    ],
+    "export_specs": [
+      {"label": "Kích thước", "text": "Theo mẫu / theo yêu cầu"},
+      {"label": "Chất liệu", "text": "Gỗ tự nhiên"},
+      {"label": "Hoàn thiện", "text": "Sơn PU"},
+      {"label": "Màu sắc", "text": "Đa dạng"}
+    ],
+    "project_tab": "Sản phẩm dự án",
+    "project_lead": "Hệ cửa gỗ và tủ bếp – tủ lavabo cho căn hộ, khách sạn, văn phòng; vật liệu bền bỉ, kết cấu tối ưu, tuỳ biến theo từng dự án.",
+    "doors": [
+      {"title": "Cửa ra vào chống cháy", "text": "Chống cháy 30/45/60 phút (EI), đạt quy chuẩn PCCC. Lõi khoáng chống cháy, tấm MGO, bông thuỷ tinh; khung gỗ tự nhiên / LVL."},
+      {"title": "Cửa thông phòng", "text": "Vận hành êm, cách âm tốt, chống cong vênh. Lõi Honeycomb hoặc Tubular PB/LVL; bề mặt melamine, laminate."},
+      {"title": "Cửa nhà vệ sinh", "text": "Chống ẩm, hạn chế cong vênh, có thể tích hợp khe thông gió. Lõi WPC / PVC foam, phụ kiện inox SUS304."}
+    ],
+    "kitchen_image": "/img/pr-sentosa-3.webp",
+    "kitchen_alt": "Tủ bếp gỗ, Minato Residence",
+    "kitchen_title": "Tủ bếp & tủ lavabo",
+    "kitchen_text": "Kết cấu năm lớp: khung chịu lực, lõi chống cong vênh, bề mặt chống trầy, nẹp cạnh chống ẩm, hoàn thiện PU/UV. Lựa chọn vật liệu MDF chống ẩm hoặc WPC chống nước tuyệt đối.",
+    "materials": [
+      {"name": "MDF", "text": "Bề mặt mịn, dễ gia công, giá thành hợp lý"},
+      {"name": "WPC", "text": "Chống nước, chống mối mọt, độ bền cao"}
+    ]
+  },
+  "projects": {
+    "title": "Hoàn thiện nội thất trọn gói.",
+    "items": [
+      {"name": "Vlasta Sầm Sơn", "image": "/img/pr-vlasta-1.webp"},
+      {"name": "D’.Palais de Louis", "image": "/img/pr-palais-2.webp"},
+      {"name": "D’ Metropole Hà Tĩnh", "image": "/img/pr-metro-2.webp"},
+      {"name": "Đầm Vạc Hotel Vĩnh Phúc", "image": "/img/pr-damvac-2.webp"},
+      {"name": "Sentosa, Minato Residence", "image": "/img/pr-sentosa-1.webp"}
+    ],
+    "note": "Một số hình ảnh phối cảnh do Á Đông Décor — công ty thành viên — thực hiện.",
+    "styles_title": "Phong cách thiết kế của chúng tôi",
+    "styles": [
+      {"name": "Japandi", "image": "/img/sty-japandi.webp", "alt": "Phòng khách phong cách Japandi", "text": "Tôn vinh chất liệu tự nhiên, tông màu trung tính và tay nghề tinh tế, tạo nên không gian bình yên, thanh thoát và mang vẻ đẹp vượt thời gian."},
+      {"name": "Scandinavian", "image": "/img/sty-scandi.webp", "alt": "Phòng khách phong cách Scandinavian", "text": "Đề cao ánh sáng tự nhiên, công năng và sự tối giản, mang đến cảm giác nhẹ nhàng, ấm cúng và phù hợp với nhiều không gian sống hiện đại."},
+      {"name": "Contemporary", "image": "/img/sty-contemporary.webp", "alt": "Phòng ngủ phong cách Contemporary", "text": "Ngôn ngữ thiết kế hiện đại, tinh tế với tính ứng dụng cao; tối ưu công năng, độ bền và khả năng tuỳ biến cho các dự án thương mại quy mô lớn."}
+    ]
+  },
+  "certs": {
+    "title": "Chất lượng được chứng nhận.",
+    "cards": [
+      {"kicker": "Hệ thống quản lý chất lượng", "title": "ISO 9001:2015", "text": "Kinh doanh, sản xuất, lắp đặt nội thất gỗ."},
+      {"kicker": "Chuỗi hành trình sản phẩm", "title": "FSC® CoC", "text": "Chứng nhận bởi TÜV SÜD · FSC 100%, FSC Mix cho sản xuất nội thất trong nhà."}
+    ],
+    "badges_kicker": "Tiêu chuẩn vật liệu",
+    "badges": [
+      {"image": "/img/c-fsc.webp", "name": "FSC"},
+      {"image": "/img/c-carb.webp", "name": "CARB Phase 2"},
+      {"image": "/img/c-e0.webp", "name": "E0"},
+      {"image": "/img/c-e1.webp", "name": "E1"},
+      {"image": "/img/c-reach.webp", "name": "REACH, RoHS"}
+    ],
+    "partners_title": "Đối tác & nhà cung cấp",
+    "partners": [
+      {"image": "/img/l-homag.webp", "name": "HOMAG"},
+      {"image": "/img/l-hafele.webp", "name": "Häfele"},
+      {"image": "/img/l-ancuong.webp", "name": "An Cường"},
+      {"image": "/img/l-aica.webp", "name": "AICA"},
+      {"image": "/img/l-becker.webp", "name": "Becker Chem"},
+      {"image": "/img/l-nippon.webp", "name": "Nippon Paint"},
+      {"image": "/img/l-koyo.webp", "name": "Koyobond"},
+      {"image": "/img/l-camira.webp", "name": "Camira"},
+      {"image": "/img/l-mastrotto.webp", "name": "Gruppo Mastrotto"}
+    ]
+  },
+  "contact": {
+    "title": "Cùng HAVICO kiến tạo dự án tiếp theo.",
+    "email": "sale01@havicof.com",
+    "office": "423+424 Võ Nguyên Giáp,\nphường Lê Chân, TP. Hải Phòng",
+    "office_map": "https://maps.app.goo.gl/4Fcz1Z6wZNvts7Qn7",
+    "factory": "Chân Cầu Vàng 2,\nphường An Lão, TP. Hải Phòng",
+    "factory_map": "https://maps.app.goo.gl/Kq61pgSdWKXSVxoi9",
+    "phone": "0225.662.8888"
+  }
+}

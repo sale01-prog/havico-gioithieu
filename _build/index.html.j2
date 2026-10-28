@@ -1,0 +1,280 @@
+<!doctype html>
+{#- Template for index.html. Text and images come from content.json (edited in Pages CMS); run _build/build.py after editing this file. #}
+{%- macro stat(s) -%}
+<div><b data-count="{{ s.value }}"{% if s.year %} data-plain>{{ s.value }}{% else %}{% if (s.value or 0) >= 1000 %} data-sep{% endif %}{% if s.suffix %} data-suffix="{{ s.suffix }}"{% endif %}{% if s.prefix %} data-prefix="{{ s.prefix }}"{% endif %}>0{% endif %}</b><span>{{ s.label }}</span></div>
+{%- endmacro %}
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ seo.title }}</title>
+<meta name="description" content="{{ seo.description }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ seo.title }}">
+<meta property="og:title" content="{{ seo.title }}">
+<meta property="og:description" content="{{ seo.share }}">
+<meta property="og:url" content="https://havicof.vn/">
+<meta property="og:image" content="https://havicof.vn/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#07529D">
+<link rel="canonical" href="https://havicof.vn/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization",
+ "name":"Công ty cổ phần gỗ HAVICO","alternateName":"HAVICO","url":"https://havicof.vn/",
+ "logo":"https://havicof.vn/img/logo-blue.svg","image":"https://havicof.vn/img/og-image.jpg",
+ "description":{{ seo.share | tojson }},
+ "foundingDate":"1990","taxID":"0202229723","telephone":"+84 225 662 8888","email":{{ contact.email | tojson }},
+ "address":{"@type":"PostalAddress","streetAddress":"423+424 Võ Nguyên Giáp, phường Lê Chân","addressLocality":"Hải Phòng","addressCountry":"VN"},
+ "sameAs":["https://havicof.com/","https://www.facebook.com/havicof/","https://www.youtube.com/@HavicoWood","https://www.tiktok.com/@havicowood","https://shopee.vn/havico"]}
+</script>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=22">
+</head>
+<body>
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-in"><img src="img/logo-white.svg" alt=""><div class="loader-line"><i></i></div><span class="loader-count">00</span></div>
+</div>
+<div class="cursor" aria-hidden="true"><span></span></div>
+
+<header class="head">
+  <a class="logo" href="#top" aria-label="HAVICO – đầu trang"><img class="lw" src="img/logo-white.svg" alt="HAVICO"><img class="lb" src="img/logo-blue.svg" alt=""></a>
+  <nav class="nav" aria-label="Điều hướng chính">
+    <a href="#gioi-thieu">Giới thiệu</a><a href="#hanh-trinh">Hành trình</a><a href="#nang-luc">Năng lực</a>
+    <a href="#san-pham">Sản phẩm</a><a href="#du-an">Dự án</a><a href="#chung-nhan">Chứng nhận</a>
+  </nav>
+  <a class="pill magnetic" href="files/HAVICO-Catalogue-VN.pdf" download><span>Tải catalogue</span><i class="dl">↓</i></a>
+  <button class="burger" aria-label="Mở menu" aria-expanded="false" aria-controls="mnav"><i></i><i></i></button>
+</header>
+<nav class="mnav" id="mnav" aria-label="Menu di động">
+  <a href="#gioi-thieu"><small>01</small>Giới thiệu</a><a href="#hanh-trinh"><small>02</small>Hành trình</a>
+  <a href="#nang-luc"><small>03</small>Năng lực</a><a href="#san-pham"><small>04</small>Sản phẩm</a>
+  <a href="#du-an"><small>05</small>Dự án</a><a href="#chung-nhan"><small>06</small>Chứng nhận</a><a href="#lien-he"><small>07</small>Liên hệ</a>
+  <a class="mnav-dl" href="files/HAVICO-Catalogue-VN.pdf" download>Tải catalogue (PDF, 10 MB) ↓</a>
+  <div class="social" data-social></div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-media"><img src="{{ hero.image | u }}" alt="{{ hero.image_alt }}"></div>
+    <div class="hero-shade"></div>
+    <svg class="facets" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <polygon class="f1" points="0,900 0,520 520,900"/><polygon class="f2" points="1440,0 1440,420 980,0"/>
+      <polygon class="f3" points="1440,900 1440,640 1180,900"/>
+    </svg>
+    <div class="hero-in">
+      <p class="eyebrow hero-eyebrow"><span class="dot"></span>{{ hero.eyebrow }}</p>
+      <h1 class="hero-title">
+        <span class="ln"><span>{{ hero.line1 }}</span></span>
+        <span class="ln"><span>{{ hero.line2 }}</span></span>
+        <span class="ln"><span class="outline">{{ hero.line3 }}</span></span>
+      </h1>
+      <p class="hero-sub">{{ hero.sub }}</p>
+    </div>
+    <div class="hero-stats">
+      {%- for s in hero.stats %}
+      {{ stat(s) }}
+      {%- endfor %}
+    </div>
+    <div class="hero-cue"><i></i><span>Cuộn</span></div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="mq-track">
+      {% for m in marquee %}<span>{{ m }}</span><b>◆</b>{% endfor %}
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="sec about" id="gioi-thieu">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow tag">01 — Giới thiệu công ty</p>
+        <h2 class="h2 split">{{ about.title }}</h2>
+        <p class="lead fade">{{ about.lead }}</p>
+        <dl class="facts">
+          {%- for f in about.facts %}
+          <div><dt>{{ f.label }}</dt><dd>{{ f.text }}</dd></div>
+          {%- endfor %}
+        </dl>
+      </div>
+      <div class="about-visual">
+        <figure class="ab-1 reveal"><img src="{{ about.image1 | u }}" alt="{{ about.image1_alt }}" loading="lazy"></figure>
+        <figure class="ab-2 reveal"><img src="{{ about.image2 | u }}" alt="{{ about.image2_alt }}" loading="lazy"></figure>
+        <div class="ab-badge">
+          <svg class="ab-ring" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="ringPath" d="M100,100 m-82,0 a82,82 0 1,1 164,0 a82,82 0 1,1 -164,0"/></defs>
+            <text><textPath href="#ringPath" textLength="512" lengthAdjust="spacing">HAVICO · TỪ 1990 · NGHỀ MỘC VIỆT ·</textPath></text></svg>
+          <b>{{ about.badge_number }}<sup>+</sup></b><span>{{ about.badge_text | br }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE (pinned horizontal) -->
+  <section class="timeline" id="hanh-trinh">
+    <div class="tl-in">
+      <div class="tl-top"><p class="eyebrow tag">02 — Hành trình phát triển</p><p class="tl-year" aria-hidden="true">{{ timeline['items'][0].year }}</p></div>
+      <div class="tl-track">
+        <div class="tl-line"><i></i></div>
+        {%- for t in timeline['items'] %}
+        <article class="tl-item" data-year="{{ t.year }}"><span class="tl-dot"></span><h3>{{ t.year }}</h3><p>{{ t.text }}</p></article>
+        {%- endfor %}
+        <figure class="tl-photo"><img src="{{ timeline.photo | u }}" alt="{{ timeline.photo_alt }}" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITY: sticky image + scrolling chapters -->
+  <section class="sec cap" id="nang-luc">
+    <div class="wrap">
+      <div class="sec-top"><p class="eyebrow tag">03 — Năng lực sản xuất</p><h2 class="h2 split">{{ capability.title }}</h2></div>
+      <div class="cap-grid">
+        <div class="cap-stage" aria-hidden="true">
+          {% for im in capability.images %}<img {% if loop.first %}class="on" {% endif %}src="{{ im | u }}" alt="">{% endfor %}
+          <span class="cap-no">01</span>
+        </div>
+        <div class="cap-list">
+          {%- for c in capability['items'] %}
+          <article class="cap-item"><p class="cap-k">{{ c.kicker }}</p><h3>{{ c.title }}</h3>
+            <ul>{% for p in c.points %}<li>{{ p }}</li>{% endfor %}</ul>
+            {%- if c.note %}
+            <p class="cap-note">{{ c.note }}</p>{% endif %}</article>
+          {%- endfor %}
+          <article class="cap-item"><p class="cap-k">{{ capability.scale_kicker }}</p><h3>{{ capability.scale_title }}</h3>
+            <div class="cap-stats">{% for s in capability.scale_stats %}{{ stat(s) }}{% endfor %}</div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="sec products" id="san-pham">
+    <div class="wrap">
+      <div class="sec-top"><p class="eyebrow tag">04 — Sản phẩm</p><h2 class="h2 split">{{ products.title }}</h2></div>
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-tab="xk">{{ products.export_tab }}</button>
+        <button role="tab" aria-selected="false" data-tab="da">{{ products.project_tab }}</button>
+        <span class="tab-ink"></span>
+      </div>
+
+      <div class="panel on" data-panel="xk" role="tabpanel">
+        <p class="panel-lead">{{ products.export_lead }}</p>
+        <div class="rail" tabindex="0" aria-label="Danh mục sản phẩm xuất khẩu, kéo để xem">
+          <div class="rail-track">
+            {%- for c in products.export_cards %}
+            <figure class="pcard"><div class="pcard-img"><img src="{{ c.image | u }}" alt="{{ c.alt }}" loading="lazy"></div><figcaption><small>{{ '%02d' % loop.index }}</small>{{ c.caption }}</figcaption></figure>
+            {%- endfor %}
+          </div>
+        </div>
+        <ul class="specs">{% for s in products.export_specs %}<li><b>{{ s.label }}</b>{{ s.text }}</li>{% endfor %}</ul>
+      </div>
+
+      <div class="panel" data-panel="da" role="tabpanel" hidden>
+        <p class="panel-lead">{{ products.project_lead }}</p>
+        <div class="doors">
+          {#- door photos and their 3D offsets are tuned by hand, so only the words are editable #}
+          {%- for d in products.doors %}{% set look = DOORS[loop.index0 % DOORS | length] %}
+          <article class="door">
+            <button class="door-frame" aria-pressed="false" aria-label="Mở {{ d.title[:1] | lower }}{{ d.title[1:] }}">
+              <span class="door3d" style="{{ look.style }}">
+                <span class="d-room"><img src="img/{{ look.room }}" alt="" loading="lazy"></span>
+                <span class="d-leaf"><img src="img/{{ look.leaf }}" alt="" loading="lazy"></span>
+                <img class="d-frame" src="img/{{ look.frame }}" alt="{{ d.title }}" loading="lazy">
+              </span>
+              <span class="d-hint">Chạm để mở</span>
+            </button>
+            <h3><small>{{ '%02d' % loop.index }}</small>{{ d.title }}</h3><p>{{ d.text }}</p></article>
+          {%- endfor %}
+        </div>
+        <div class="kitchen">
+          <figure class="reveal"><img src="{{ products.kitchen_image | u }}" alt="{{ products.kitchen_alt }}" loading="lazy"></figure>
+          <div><h3>{{ products.kitchen_title }}</h3>
+            <p>{{ products.kitchen_text }}</p>
+            <div class="vs">{% for m in products.materials %}<div><b>{{ m.name }}</b><span>{{ m.text }}</span></div>{% endfor %}</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="sec projects" id="du-an">
+    <div class="wrap">
+      <div class="sec-top"><p class="eyebrow tag">05 — Dự án tiêu biểu</p><h2 class="h2 split">{{ projects.title }}</h2></div>
+      <div class="proj-grid" id="projGrid">
+        {%- for p in projects['items'] %}
+        <a class="pj pj-{{ 'abcdefghij'[loop.index0] }}" href="{{ p.image | u }}" data-cap="{{ p.name }}"><img src="{{ p.image | u }}" alt="{{ p.name }}" loading="lazy"><span>{{ p.name }}</span></a>
+        {%- endfor %}
+      </div>
+      <p class="pj-note">{{ projects.note }}</p>
+      <div class="inspo">
+        <p class="eyebrow">{{ projects.styles_title }}</p>
+        <div class="inspo-row" id="inspo">
+          {%- for s in projects.styles %}
+          <figure><img src="{{ s.image | u }}" alt="{{ s.alt }}" loading="lazy">
+            <figcaption><small>{{ '%02d' % loop.index }}</small><b>{{ s.name }}</b><span>{{ s.text }}</span></figcaption></figure>
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTS & PARTNERS -->
+  <section class="sec certs" id="chung-nhan">
+    <div class="wrap">
+      <div class="sec-top"><p class="eyebrow tag">06 — Chứng nhận &amp; đối tác</p><h2 class="h2 split">{{ certs.title }}</h2></div>
+      <div class="cert-cards">
+        {%- for c in certs.cards %}
+        <article class="cert tilt"><p class="eyebrow">{{ c.kicker }}</p><h3>{{ c.title }}</h3><p>{{ c.text }}</p></article>
+        {%- endfor %}
+        <article class="cert tilt"><p class="eyebrow">{{ certs.badges_kicker }}</p><div class="badges">{% for b in certs.badges %}<img src="{{ b.image | u }}" alt="{{ b.name }}">{% endfor %}</div></article>
+      </div>
+      <p class="eyebrow partners-t">{{ certs.partners_title }}</p>
+    </div>
+    <div class="logos" aria-label="Đối tác">
+      <div class="logos-track">
+        {% for b in certs.partners %}<img src="{{ b.image | u }}" alt="{{ b.name }}">{% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="lien-he">
+  <svg class="facets foot-facets" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true"><polygon points="1440,0 1440,900 760,900"/><polygon points="0,0 420,0 0,380"/></svg>
+  <div class="wrap">
+    <p class="eyebrow tag">07 — Liên hệ</p>
+    <div class="foot-cta">
+      <h2 class="mega split">{{ contact.title }}</h2>
+      <a class="orb magnetic" href="mailto:{{ contact.email }}"><span>Gửi yêu cầu<br>hợp tác</span></a>
+    </div>
+    <div class="foot-grid">
+      <div><h4>Công ty</h4><p>{{ contact.office | br }}</p>
+        <a class="ul" href="{{ contact.office_map }}" target="_blank" rel="noopener">Chỉ đường đến văn phòng ↗</a></div>
+      <div><h4>Nhà máy</h4><p>{{ contact.factory | br }}</p>
+        <a class="ul" href="{{ contact.factory_map }}" target="_blank" rel="noopener">Chỉ đường đến nhà máy ↗</a></div>
+      <div><h4>Điện thoại</h4><a class="ul" href="tel:{{ contact.phone | tel }}">{{ contact.phone }}</a></div>
+      <div><h4>Email &amp; web</h4><a class="ul" href="mailto:{{ contact.email }}">{{ contact.email }}</a><a class="ul" href="https://havicof.vn/" target="_blank" rel="noopener">havicof.vn ↗</a><a class="ul" href="https://havicof.com/" target="_blank" rel="noopener">havicof.com ↗</a></div>
+    </div>
+    <div class="foot-social">
+      <div><h4>Theo dõi HAVICO</h4><div class="social" data-social></div></div>
+      <a class="btn-dl magnetic" href="files/HAVICO-Catalogue-VN.pdf" download><span>Tải catalogue sản phẩm</span><small>PDF · 32 trang · 10 MB</small><i>↓</i></a>
+    </div>
+  </div>
+  <div class="giant" aria-hidden="true"><div class="giant-track"><img src="img/logo-white.svg" alt=""><img src="img/logo-white.svg" alt=""><img src="img/logo-white.svg" alt=""><img src="img/logo-white.svg" alt=""></div></div>
+  <div class="wrap legal"><span>© Công ty cổ phần gỗ HAVICO · MST 0202229723</span><span>havicof.vn · havicof.com</span></div>
+</footer>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Xem ảnh dự án" hidden>
+  <button class="lb-close" aria-label="Đóng">×</button><img alt=""><p></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/site.js?v=18"></script>
+</body>
+</html>
