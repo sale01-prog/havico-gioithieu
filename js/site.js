@@ -45,6 +45,10 @@
   const menu = open => {
     open = open ?? !mnav.classList.contains("open");
     mnav.classList.toggle("open", open); burger.setAttribute("aria-expanded", open);
+    // the header keeps the menu colour until the closing circle (.8s) has passed over it
+    clearTimeout(menu.t);
+    if (open) document.body.classList.add("menu-on");
+    else menu.t = setTimeout(() => document.body.classList.remove("menu-on"), 800);
     open ? lenis?.stop() : lenis?.start();
   };
   burger.onclick = () => menu();

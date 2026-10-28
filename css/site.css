@@ -71,9 +71,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* top padding clears the header logo; auto margins centre the list when it fits and let it scroll when it does not (large system font) */
 .mnav{position:fixed;inset:0;z-index:90;background:var(--blue);display:flex;flex-direction:column;gap:4px;padding:96px 24px 32px;overflow-y:auto;overscroll-behavior:contain;clip-path:circle(0 at calc(100% - 38px) 40px);transition:clip-path .8s var(--ease)}
 /* menu items scroll under the header, so give it the menu colour while open */
-body:has(.mnav.open) .head{background:var(--blue)!important;box-shadow:none!important}
-body:has(.mnav.open) .head .logo .lw{opacity:1}
-body:has(.mnav.open) .head .logo .lb{opacity:0}
+body.menu-on .head{background:var(--blue)!important;box-shadow:none!important;transition:none}
+body.menu-on .head .burger i{background:#fff}
+body.menu-on .head .logo .lw{opacity:1}
+body.menu-on .head .logo .lb{opacity:0}
 .mnav>:first-child{margin-top:auto}
 .mnav>:last-child{margin-bottom:auto}
 .mnav.open{clip-path:circle(150% at calc(100% - 38px) 40px)}
@@ -198,20 +199,28 @@ body:has(.mnav.open) .head .logo .lb{opacity:0}
 .specs b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin-bottom:4px}
 .doors{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 /* 3D door: room behind, leaf swinging on its right-hand hinges, static frame on top */
-@property --a{syntax:"<angle>";inherits:true;initial-value:0deg}
-@property --o{syntax:"<number>";inherits:true;initial-value:0}
 .door-frame{position:relative;width:100%;aspect-ratio:3/4;background:linear-gradient(180deg,var(--ice),var(--mist));border-radius:4px;display:grid;place-items:center;overflow:hidden;cursor:pointer}
 /* absolute: a % height inside the aspect-ratio button is not reliably definite, so the door could render at the photo's natural size */
-.door3d{position:absolute;top:7%;left:50%;translate:-50% 0;height:86%;aspect-ratio:var(--ar);perspective:1300px;perspective-origin:20% 45%;--a:0deg;--o:0;transition:--a 1.5s var(--ease),--o 1.5s var(--ease)}
-.door.open .door3d{--a:-76deg;--o:1}
-@media (hover:hover) and (pointer:fine){.door:hover .door3d{--a:-76deg;--o:1}}
+.door3d{position:absolute;top:7%;left:50%;translate:-50% 0;height:86%;aspect-ratio:var(--ar);perspective:1300px;perspective-origin:20% 45%}
+/* each part transitions its own property: an animated inherited custom property was not repainted every frame, so the door snapped shut.
+   Opening eases out (open state timing); closing eases in-out (base timing) so the leaf swings shut instead of slamming. */
+.door.open .d-leaf,.door.open .d-leaf::after,.door.open .d-room img{transition-duration:1.5s;transition-timing-function:var(--ease)}
+@media (hover:hover) and (pointer:fine){.door:hover .d-leaf,.door:hover .d-leaf::after,.door:hover .d-room img{transition-duration:1.5s;transition-timing-function:var(--ease)}}
+.door.open .d-leaf{transform:rotateY(-76deg);filter:drop-shadow(-8px 10px 14px rgba(6,26,51,.4))}
+.door.open .d-leaf::after{opacity:.9}
+.door.open .d-room img{filter:brightness(1.1);transform:none}
+@media (hover:hover) and (pointer:fine){
+  .door:hover .d-leaf{transform:rotateY(-76deg);filter:drop-shadow(-8px 10px 14px rgba(6,26,51,.4))}
+  .door:hover .d-leaf::after{opacity:.9}
+  .door:hover .d-room img{filter:brightness(1.1);transform:none}
+}
 .d-room,.d-leaf{position:absolute;left:var(--l);right:var(--r);top:var(--t);bottom:0}
 .d-room{overflow:hidden;background:#1d232b}
-.d-room img{width:100%;height:100%;object-fit:cover;filter:brightness(calc(.25 + var(--o) * .85));transform:scale(calc(1.1 - var(--o) * .1))}
+.d-room img{width:100%;height:100%;object-fit:cover;filter:brightness(.25);transform:scale(1.1);transition:filter 1.2s cubic-bezier(.65,0,.35,1),transform 1.2s cubic-bezier(.65,0,.35,1)}
 .d-room::after{content:"";position:absolute;inset:0;box-shadow:inset 18px 0 30px rgba(0,0,0,.45),inset 0 14px 24px rgba(0,0,0,.35);pointer-events:none}
-.d-leaf{transform-origin:100% 50%;transform:rotateY(var(--a));filter:drop-shadow(-8px 10px 14px rgba(6,26,51,calc(.15 + var(--o) * .25)))}
+.d-leaf{transform-origin:100% 50%;transform:rotateY(0deg);filter:drop-shadow(-8px 10px 14px rgba(6,26,51,.15));transition:transform 1.2s cubic-bezier(.65,0,.35,1),filter 1.2s cubic-bezier(.65,0,.35,1)}
 .d-leaf img{width:100%;height:100%;display:block}
-.d-leaf::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.65),rgba(0,0,0,.15));opacity:calc(var(--o) * .9);pointer-events:none}
+.d-leaf::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.65),rgba(0,0,0,.15));opacity:0;transition:opacity 1.2s cubic-bezier(.65,0,.35,1);pointer-events:none}
 .d-frame{position:relative;display:block;width:100%;height:100%;filter:drop-shadow(0 22px 22px rgba(6,26,51,.22));pointer-events:none}
 .d-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--blue);background:#fff;padding:7px 14px;border-radius:999px;box-shadow:0 6px 18px rgba(6,26,51,.12);white-space:nowrap;transition:opacity .4s}
 .door.open .d-hint{opacity:.85}
