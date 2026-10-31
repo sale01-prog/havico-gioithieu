@@ -35,7 +35,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=36">
+<link rel="stylesheet" href="css/site.css?v=38">
 <!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Q0MK2Z8"></script>
 <script>
@@ -211,10 +211,10 @@
           {%- endfor %}
         </div>
         <div class="kitchen">
-          <figure class="reveal"><img src="{{ products.kitchen_image | u }}" alt="{{ products.kitchen_alt }}" loading="lazy"></figure>
+          <figure class="reveal">{% for m in products.materials %}<img{% if loop.first %} class="on"{% endif %} src="{{ m.image | u }}" alt="{{ m.alt }}" loading="lazy">{% endfor %}</figure>
           <div><h3>{{ products.kitchen_title }}</h3>
             <p>{{ products.kitchen_text }}</p>
-            <div class="vs">{% for m in products.materials %}<div><b>{{ m.name }}</b><span>{{ m.text }}</span></div>{% endfor %}</div></div>
+            <div class="vs">{% for m in products.materials %}<div tabindex="0"><b>{{ m.name }}</b><span>{{ m.text }}</span></div>{% endfor %}</div></div>
         </div>
       </div>
     </div>

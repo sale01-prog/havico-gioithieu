@@ -240,13 +240,21 @@ body.menu-on .head .logo .lb{opacity:0}
 .door small{font-size:12px;color:var(--blue)}
 .door p{color:var(--muted);font-size:15px}
 .kitchen{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(30px,5vw,80px);align-items:center;margin-top:80px}
-.kitchen figure{aspect-ratio:16/10;overflow:hidden;border-radius:4px}
-.kitchen img{width:100%;height:100%;object-fit:cover}
+.kitchen figure{aspect-ratio:16/10;overflow:hidden;border-radius:4px;display:grid}
+.kitchen img{grid-area:1/1;width:100%;height:100%;object-fit:cover;object-position:50% 35%;opacity:0;transform:scale(1.04);transition:opacity .6s,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.kitchen img.on{opacity:1;transform:none}
+.kitchen:has(.vs div:last-child:is(:hover,:focus)) img.on{opacity:0;transform:scale(1.04)}
+.kitchen:has(.vs div:last-child:is(:hover,:focus)) img:last-child{opacity:1;transform:none}
 .kitchen h3{font-size:clamp(26px,2.4vw,38px);font-weight:700;letter-spacing:-.02em;margin-bottom:16px}
 .kitchen p{color:var(--muted)}
-.vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
-.vs div{padding:20px;border-radius:4px;background:var(--ice)}
-.vs div:last-child{background:var(--blue);color:#fff}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px;position:relative}
+.vs div{padding:20px;border-radius:4px;background:var(--ice);cursor:default;outline:0;transition:color .45s}
+.vs b,.vs span{position:relative;z-index:2}
+.vs::before{content:"";position:absolute;z-index:1;top:0;bottom:0;left:0;width:calc(50% - 7px);border-radius:4px;background:var(--blue);transition:transform .55s cubic-bezier(.65,0,.25,1)}
+.vs div:first-child{color:#fff}
+.vs:has(div:last-child:is(:hover,:focus))::before{transform:translateX(calc(100% + 14px))}
+.vs:has(div:last-child:is(:hover,:focus)) div:last-child{color:#fff}
+.vs:has(div:last-child:is(:hover,:focus)) div:first-child{color:inherit}
 .vs b{display:block;font-size:24px;font-weight:800}
 .vs span{font-size:14px;opacity:.85}
 

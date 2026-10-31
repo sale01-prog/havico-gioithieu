@@ -138,6 +138,14 @@ content:
               - { name: text, label: Nội dung, type: string }
           - { name: project_tab, label: Tab 2 — tên, type: string }
           - { name: project_lead, label: Tab 2 — giới thiệu, type: text }
+          - name: project_scope
+            label: Tab 2 — hạng mục thi công
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Nhóm, type: string }
+              - { name: text, label: Hạng mục, type: string }
+          - { name: project_featured, label: Tab 2 — dòng tiêu đề trên 3 loại cửa, type: string }
           - name: doors
             label: Tab 2 — 3 loại cửa (ảnh cửa cố định, giữ đúng thứ tự)
             type: object
@@ -145,17 +153,17 @@ content:
             fields:
               - { name: title, label: Tên, type: string }
               - { name: text, label: Mô tả, type: text }
-          - { name: kitchen_image, label: Tủ bếp — ảnh, type: image }
-          - { name: kitchen_alt, label: Tủ bếp — mô tả ảnh, type: string }
           - { name: kitchen_title, label: Tủ bếp — tiêu đề, type: string }
           - { name: kitchen_text, label: Tủ bếp — nội dung, type: text }
           - name: materials
-            label: Tủ bếp — vật liệu
+            label: Tủ bếp — vật liệu (mỗi vật liệu 1 ảnh)
             type: object
             list: true
             fields:
               - { name: name, label: Tên, type: string }
               - { name: text, label: Mô tả, type: string }
+              - { name: image, label: Ảnh (hiện khi rê chuột), type: image }
+              - { name: alt, label: Mô tả ảnh, type: string }
 
       - name: projects
         label: 05 — Dự án
