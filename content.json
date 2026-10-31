@@ -90,7 +90,13 @@
       {"label": "Màu sắc", "text": "Đa dạng"}
     ],
     "project_tab": "Sản phẩm dự án",
-    "project_lead": "Thi công nội thất trọn gói cho căn hộ, biệt thự, khách sạn, văn phòng – từ khảo sát, thiết kế, sản xuất đến lắp đặt, hoàn thiện và bàn giao. Tiêu biểu: hệ cửa gỗ, tủ bếp, tủ lavabo, tuỳ biến theo từng dự án.",
+    "project_lead": "Thi công nội thất trọn gói từ thô đến hoàn thiện cho căn hộ, biệt thự, khách sạn, văn phòng. HAVICO lo từ khảo sát, thiết kế, sản xuất đến lắp đặt và bàn giao.",
+    "project_scope": [
+      {"label": "Phần thô & hoàn thiện", "text": "điện nước, tường, trần thạch cao, sơn bả, sàn"},
+      {"label": "Đồ gỗ đóng sẵn", "text": "hệ cửa gỗ, tủ bếp, tủ lavabo, tủ áo"},
+      {"label": "Đồ rời", "text": "bàn, ghế, giường, sofa, kệ trang trí"}
+    ],
+    "project_featured": "Sản phẩm tiêu biểu do HAVICO sản xuất",
     "doors": [
       {"title": "Cửa ra vào chống cháy", "text": "Chống cháy 30/45/60 phút (EI), đạt quy chuẩn PCCC. Lõi khoáng chống cháy, tấm MGO, bông thuỷ tinh; khung gỗ tự nhiên / LVL."},
       {"title": "Cửa thông phòng", "text": "Vận hành êm, cách âm tốt, chống cong vênh. Lõi Honeycomb hoặc Tubular PB/LVL; bề mặt melamine, laminate."},

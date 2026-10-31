@@ -189,6 +189,12 @@ body.menu-on .head .logo .lb{opacity:0}
 .tabs button[aria-selected="true"]{color:#fff}
 .tab-ink{position:absolute;top:6px;bottom:6px;left:6px;border-radius:999px;background:var(--blue);transition:transform .6s var(--ease),width .6s var(--ease)}
 .panel-lead{max-width:720px;color:var(--muted);font-size:18px;margin-bottom:40px}
+.panel-lead.has-scope{margin-bottom:20px}
+.scope{list-style:none;max-width:720px;margin:0 0 56px;padding:0;display:grid;gap:10px}
+.scope li{display:grid;grid-template-columns:200px 1fr;gap:16px;font-size:16px;color:var(--muted);padding-bottom:10px;border-bottom:1px solid rgba(0,0,0,.08)}
+.scope b{color:var(--blue);font-weight:600}
+.featured{color:var(--blue);margin-bottom:28px}
+@media(max-width:640px){.scope li{grid-template-columns:1fr;gap:2px}}
 .panel[hidden]{display:none}
 .rail{overflow:hidden;cursor:grab;margin:0 calc(var(--pad)*-1);padding:0 var(--pad);outline:0}
 .rail.drag{cursor:grabbing}

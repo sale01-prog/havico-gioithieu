@@ -35,7 +35,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=35">
+<link rel="stylesheet" href="css/site.css?v=36">
 <!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Q0MK2Z8"></script>
 <script>
@@ -192,7 +192,9 @@
       </div>
 
       <div class="panel" data-panel="da" role="tabpanel" hidden>
-        <p class="panel-lead">{{ products.project_lead }}</p>
+        <p class="panel-lead has-scope">{{ products.project_lead }}</p>
+        <ul class="scope">{% for x in products.project_scope %}<li><b>{{ x.label }}</b><span>{{ x.text }}</span></li>{% endfor %}</ul>
+        <p class="eyebrow featured">{{ products.project_featured }}</p>
         <div class="doors">
           {#- door photos and their 3D offsets are tuned by hand, so only the words are editable #}
           {%- for d in products.doors %}{% set look = DOORS[loop.index0 % DOORS | length] %}
