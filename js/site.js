@@ -156,7 +156,11 @@
 
   // split headings into masked words
   $$(".split").forEach(el => {
-    el.innerHTML = el.textContent.trim().split(/\s+/).map(w => `<span class="w"><span>${w.replace(/&/g, "&amp;").replace(/</g, "&lt;")}</span></span>`).join(" ");
+    // a non-breaking space in the CMS keeps two words on one line
+    const ws = el.textContent.trim().split(/[ \t\r\n]+/), esc = w => w.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+    // section titles: the last two words (e.g. "chủ lực.") stay together in the accent font
+    if (el.classList.contains("h2") && ws.length > 3) ws.push(ws.splice(-2).join("\u00a0"));
+    el.innerHTML = ws.map((w, i) => `<span class="w${el.classList.contains("h2") && i === ws.length - 1 && ws.length > 2 ? " acc" : ""}"><span>${esc(w)}</span></span>`).join(" ");
   });
 
   /* loader → hero intro */

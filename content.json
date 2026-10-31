@@ -21,7 +21,7 @@
   },
   "marquee": ["Việt Nam", "Hoa Kỳ", "Châu Âu", "Nhật Bản", "ISO 9001:2015", "FSC® Chain of Custody", "HOMAG Germany"],
   "about": {
-    "title": "Hơn ba thập kỷ gắn bó với nghề gỗ.",
+    "title": "Hơn ba thập kỷ gắn bó với nghề gỗ.",
     "lead": "Khởi đầu từ một xưởng gỗ truyền thống năm 1990, HAVICO ngày nay là doanh nghiệp thiết kế, sản xuất và lắp đặt nội thất gỗ cho dự án và thị trường xuất khẩu, với nhà máy 14.000 m² tại An Lão, Hải Phòng.",
     "facts": [
       {"label": "Thành lập", "text": "26/04/2023 · Công ty cổ phần"},
@@ -50,7 +50,7 @@
     "photo_alt": "Cổng nhà máy HAVICO Furniture"
   },
   "capability": {
-    "title": "Nhà máy chuẩn xuất khẩu.",
+    "title": "Nhà máy chuẩn xuất khẩu.",
     "images": ["/img/workshop-1.webp?v=2", "/img/cap-finish.webp", "/img/cap-detail.webp", "/img/aerial-road.webp"],
     "items": [
       {"kicker": "01 · Thiết bị", "title": "Dây chuyền HOMAG từ Đức",
@@ -72,7 +72,7 @@
     ]
   },
   "products": {
-    "title": "Hai dòng sản phẩm chủ lực.",
+    "title": "Hai dòng sản phẩm chủ lực.",
     "export_tab": "Sản phẩm xuất khẩu",
     "export_lead": "Từ nội thất hoàn thiện đến sản phẩm RTA, thiết kế và sản xuất theo tiêu chuẩn quốc tế, đáp ứng linh hoạt thị trường xuất khẩu.",
     "export_cards": [
@@ -110,7 +110,7 @@
     ]
   },
   "projects": {
-    "title": "Hoàn thiện nội thất trọn gói.",
+    "title": "Hoàn thiện nội thất trọn gói.",
     "note": "Một số hình ảnh phối cảnh do Á Đông Décor — công ty thành viên — thực hiện.",
     "styles_title": "Phong cách thiết kế của chúng tôi",
     "styles": [
@@ -120,7 +120,7 @@
     ]
   },
   "certs": {
-    "title": "Chất lượng được chứng nhận.",
+    "title": "Chất lượng được chứng nhận.",
     "cards": [
       {"kicker": "Hệ thống quản lý chất lượng", "title": "ISO 9001:2015", "text": "Kinh doanh, sản xuất, lắp đặt nội thất gỗ."},
       {"kicker": "Chuỗi hành trình sản phẩm", "title": "FSC® CoC", "text": "Chứng nhận bởi TÜV SÜD · FSC 100%, FSC Mix cho sản xuất nội thất trong nhà."}
