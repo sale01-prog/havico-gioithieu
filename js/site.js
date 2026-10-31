@@ -156,11 +156,10 @@
 
   // split headings into masked words
   $$(".split").forEach(el => {
-    // titles keep the line breaks typed in the CMS; a section title's last line gets the italic accent
+    // titles keep the line breaks typed in the CMS
     const esc = w => w.replace(/&/g, "&amp;").replace(/</g, "&lt;");
     const lines = el.innerHTML.split(/<br\s*\/?>/).map(l => { const d = document.createElement("div"); d.innerHTML = l; return d.textContent.trim().split(/\s+/).filter(Boolean); });
-    const acc = el.classList.contains("h2") && lines.length > 1;
-    el.innerHTML = lines.map((ws, n) => ws.map(w => `<span class="w${acc && n === lines.length - 1 ? " acc" : ""}"><span>${esc(w)}</span></span>`).join(" ")).join("<br>");
+    el.innerHTML = lines.map(ws => ws.map(w => `<span class="w"><span>${esc(w)}</span></span>`).join(" ")).join("<br>");
   });
 
   /* loader → hero intro */
