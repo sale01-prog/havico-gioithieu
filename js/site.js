@@ -319,3 +319,15 @@
 
   addEventListener("load", () => ScrollTrigger.refresh());
 })();
+
+// Tủ bếp: rê chuột / chạm vào MDF hoặc WPC thì khối xanh và ảnh đổi theo, giữ nguyên lựa chọn khi rời chuột
+(() => {
+  const k = document.querySelector(".kitchen");
+  if (!k) return;
+  const cards = k.querySelectorAll(".vs div"), imgs = k.querySelectorAll("figure img");
+  const pick = (i) => {
+    k.classList.toggle("pick-2", i === 1);
+    imgs.forEach((im, j) => im.classList.toggle("on", j === i));
+  };
+  cards.forEach((c, i) => ["pointerenter", "click", "focus"].forEach((e) => c.addEventListener(e, () => pick(i))));
+})();
