@@ -13,10 +13,10 @@
     "image": "/img/hero-living.webp",
     "image_alt": "Không gian phòng khách nghỉ dưỡng với nội thất gỗ HAVICO",
     "stats": [
-      {"value": 14000, "prefix": "", "suffix": "", "year": false, "label": "m² diện tích nhà máy"},
-      {"value": 150, "prefix": "", "suffix": "+", "year": false, "label": "lao động lành nghề"},
-      {"value": 30, "prefix": "~", "suffix": "", "year": false, "label": "container / tháng"},
-      {"value": 1990, "prefix": "", "suffix": "", "year": true, "label": "khởi nguồn từ xưởng gỗ"}
+      {"value": 100, "prefix": "", "suffix": "+", "year": false, "label": "dự án đã bàn giao"},
+      {"value": 28, "prefix": "", "suffix": "", "year": false, "label": "tỉnh thành đã thi công"},
+      {"value": 3, "prefix": "", "suffix": "", "year": false, "label": "thị trường xuất khẩu: Mỹ · Âu · Nhật"},
+      {"value": 1, "prefix": "", "suffix": "", "year": false, "label": "đầu mối, từ bản vẽ đến bàn giao"}
     ]
   },
   "marquee": ["Việt Nam", "Hoa Kỳ", "Châu Âu", "Nhật Bản", "ISO 9001:2015", "FSC® Chain of Custody", "HOMAG Germany"],
