@@ -106,7 +106,7 @@
     "kitchen_text": "Kết cấu năm lớp: khung chịu lực, lõi chống cong vênh, bề mặt chống trầy, nẹp cạnh chống ẩm, hoàn thiện PU/UV. Lựa chọn vật liệu MDF chống ẩm hoặc WPC chống nước tuyệt đối.",
     "materials": [
       {"name": "MDF", "text": "Bề mặt mịn, dễ gia công, giá thành hợp lý", "image": "/img/du-an/biet-thu-vinhomes-marina/12.webp", "alt": "Tủ bếp đảo, biệt thự Vinhomes Marina"},
-      {"name": "WPC", "text": "Chống nước, chống mối mọt, độ bền cao", "image": "/img/du-an/can-ho-the-minato-residence-hai-phong/12.webp", "alt": "Tủ lavabo, căn hộ The Minato Residence Hải Phòng"}
+      {"name": "WPC", "text": "Chống nước, chống mối mọt, độ bền cao", "image": "/img/du-an/biet-thu-hai-phong/13.webp", "alt": "Tủ lavabo phòng tắm, biệt thự Hải Phòng"}
     ]
   },
   "projects": {
