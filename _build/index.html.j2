@@ -34,8 +34,8 @@
 </script>
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=42">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=45">
 <!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J76Q0MK2Z8"></script>
 <script>
@@ -112,7 +112,7 @@
     <div class="wrap about-grid">
       <div class="about-copy">
         <p class="eyebrow tag">01 — Giới thiệu công ty</p>
-        <h2 class="h2 split">{{ about.title }}</h2>
+        <h2 class="h2 split">{{ about.title | br }}</h2>
         <p class="lead fade">{{ about.lead }}</p>
         <dl class="facts">
           {%- for f in about.facts %}
@@ -149,7 +149,7 @@
   <!-- CAPABILITY: sticky image + scrolling chapters -->
   <section class="sec cap" id="nang-luc">
     <div class="wrap">
-      <div class="sec-top"><p class="eyebrow tag">03 — Năng lực sản xuất</p><h2 class="h2 split">{{ capability.title }}</h2></div>
+      <div class="sec-top"><p class="eyebrow tag">03 — Năng lực sản xuất</p><h2 class="h2 split">{{ capability.title | br }}</h2></div>
       <div class="cap-grid">
         <div class="cap-stage" aria-hidden="true">
           {% for im in capability.images %}<img {% if loop.first %}class="on" {% endif %}src="{{ im | u }}" alt="">{% endfor %}
@@ -172,7 +172,7 @@
   <!-- PRODUCTS -->
   <section class="sec products" id="san-pham">
     <div class="wrap">
-      <div class="sec-top"><p class="eyebrow tag">04 — Sản phẩm</p><h2 class="h2 split">{{ products.title }}</h2></div>
+      <div class="sec-top"><p class="eyebrow tag">04 — Sản phẩm</p><h2 class="h2 split">{{ products.title | br }}</h2></div>
       <div class="tabs" role="tablist">
         <button role="tab" aria-selected="true" data-tab="xk">{{ products.export_tab }}</button>
         <button role="tab" aria-selected="false" data-tab="da">{{ products.project_tab }}</button>
@@ -223,7 +223,7 @@
   <!-- PROJECTS -->
   <section class="sec projects" id="du-an">
     <div class="wrap">
-      <div class="sec-top"><p class="eyebrow tag">05 — Dự án tiêu biểu</p><h2 class="h2 split">{{ projects.title }}</h2></div>
+      <div class="sec-top"><p class="eyebrow tag">05 — Dự án tiêu biểu</p><h2 class="h2 split">{{ projects.title | br }}</h2></div>
       <div class="proj-grid" id="projGrid">
         {%- for p in featured %}
         <a class="pj pj-{{ 'abcde'[loop.index0] }}" href="du-an/{{ p.slug }}.html" data-imgs="{% for im in p.images[:8] %}{{ im | u }} {% endfor %}"><div class="pj-imgs"><img src="{{ p.images[0] | u }}" alt="{{ p.name }}" loading="lazy"></div><span>{{ p.name }}<em> · {{ p.images | length }} ảnh</em></span></a>
@@ -246,7 +246,7 @@
   <!-- CERTS & PARTNERS -->
   <section class="sec certs" id="chung-nhan">
     <div class="wrap">
-      <div class="sec-top"><p class="eyebrow tag">06 — Chứng nhận &amp; đối tác</p><h2 class="h2 split">{{ certs.title }}</h2></div>
+      <div class="sec-top"><p class="eyebrow tag">06 — Chứng nhận &amp; đối tác</p><h2 class="h2 split">{{ certs.title | br }}</h2></div>
       <div class="cert-cards">
         {%- for c in certs.cards %}
         <article class="cert tilt"><p class="eyebrow">{{ c.kicker }}</p><h3>{{ c.title }}</h3><p>{{ c.text }}</p></article>
@@ -291,7 +291,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="js/site.js?v=23"></script>
+<script src="js/site.js?v=24"></script>
 <script src="js/protect.js?v=1"></script>
 </body>
 </html>

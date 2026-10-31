@@ -51,7 +51,7 @@ content:
         label: 01 — Giới thiệu
         type: object
         fields:
-          - { name: title, label: Tiêu đề, type: string }
+          - { name: title, label: Tiêu đề (Enter để xuống dòng; dòng cuối in nghiêng màu xanh), type: text }
           - { name: lead, label: Đoạn giới thiệu, type: text }
           - name: facts
             label: Thông tin
@@ -86,7 +86,7 @@ content:
         label: 03 — Năng lực
         type: object
         fields:
-          - { name: title, label: Tiêu đề, type: string }
+          - { name: title, label: Tiêu đề (Enter để xuống dòng; dòng cuối in nghiêng màu xanh), type: text }
           - name: images
             label: Ảnh (đổi theo từng mục khi cuộn)
             type: image
@@ -118,7 +118,7 @@ content:
         label: 04 — Sản phẩm
         type: object
         fields:
-          - { name: title, label: Tiêu đề, type: string }
+          - { name: title, label: Tiêu đề (Enter để xuống dòng; dòng cuối in nghiêng màu xanh), type: text }
           - { name: export_tab, label: Tab 1 — tên, type: string }
           - { name: export_lead, label: Tab 1 — giới thiệu, type: text }
           - name: export_cards
@@ -169,7 +169,7 @@ content:
         label: 05 — Dự án
         type: object
         fields:
-          - { name: title, label: Tiêu đề, type: string }
+          - { name: title, label: Tiêu đề (Enter để xuống dòng; dòng cuối in nghiêng màu xanh), type: text }
           - { name: note, label: Ghi chú dưới ảnh, type: string }
           - { name: styles_title, label: Phong cách — tiêu đề, type: string }
           - name: styles
@@ -187,7 +187,7 @@ content:
         label: 06 — Chứng nhận & đối tác
         type: object
         fields:
-          - { name: title, label: Tiêu đề, type: string }
+          - { name: title, label: Tiêu đề (Enter để xuống dòng; dòng cuối in nghiêng màu xanh), type: text }
           - name: cards
             label: Chứng nhận
             type: object
